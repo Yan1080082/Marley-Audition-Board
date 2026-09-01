@@ -44,6 +44,9 @@ YOUR_CRITERIA = {
     "target_shows_or_choreographers": [],   # e.g. ["Hamilton", "Ebony Williams"]
     "skip_unpaid": True,
     "skip_cruise_ships": True,
+    "hide_past_auditions": True,
+    "max_days_until_audition": 14,
+    "max_days_for_unknown_date_listings": 14,
 }
 
 # How many pages of the Performer category board to pull (~50 listings/page)
@@ -118,8 +121,19 @@ def extract_generic_fields(body, full_desc):
     elif re.search(r"\bmale\b", full_desc, re.I) and not re.search(r"\bfemale\b", full_desc, re.I):
         gender = "male"
 
-    age_match = re.search(r"\b(\d{1,2})s?[\s\-–]+(?:to\s+)?(\d{1,2})s?\b", full_desc)
-    age_range = f"{age_match.group(1)}s–{age_match.group(2)}s" if age_match else "not specified"
+    # Only treat a number range as an age range if the word "age"/"ages"
+    # actually appears close by — otherwise this false-positives on
+    # rehearsal times ("9-12"), schedule blocks, zip codes, etc. Also
+    # sanity-check the numbers fall in a plausible human age range.
+    age_range = "not specified"
+    age_match = re.search(
+        r"ages?\s*(?:range)?\s*[:\-]?\s*(\d{1,2})s?\s*(?:-|to|–)\s*(\d{1,2})s?",
+        full_desc, re.I,
+    )
+    if age_match:
+        lo, hi = int(age_match.group(1)), int(age_match.group(2))
+        if 1 <= lo <= 99 and lo <= hi <= 99:
+            age_range = f"{lo}s–{hi}s"
 
     height_match = re.search(r"(\d)\'(\d{1,2})\"?\s*(?:-|to|–)\s*(\d)\'(\d{1,2})\"?", full_desc)
     height = height_match.group(0) if height_match else "not specified"
@@ -141,8 +155,7 @@ def extract_generic_fields(body, full_desc):
     salary_match = re.search(r"\$[\d,]+(?:\.\d{2})?(?:\s*[-–]\s*\$?[\d,]+(?:\.\d{2})?)?(?:\s*(?:weekly|per week|/wk))?", body)
     salary = salary_match.group(0) if salary_match else "not specified"
 
-    date_match = re.search(r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}", body)
-    audition_date = date_match.group(0) if date_match else "see listing"
+    audition_date, audition_date_parsed = extract_audition_date(body)
 
     return {
         "gender_sought": gender,
@@ -152,8 +165,41 @@ def extract_generic_fields(body, full_desc):
         "union": union,
         "salary": salary,
         "audition_date": audition_date,
+        "audition_date_parsed": audition_date_parsed,  # ISO string or None
         "is_unpaid": is_unpaid,
     }
+
+
+def extract_audition_date(body):
+    """
+    Finds the audition date in either 'Month Day, Year' (Playbill,
+    Dance/NYC) or 'M/D/YYYY' (BroadwayWorld) format. Returns both the
+    display string and a parsed date (as an ISO string, or None if no
+    date was found or it didn't parse) — the parsed version is what the
+    upcoming/passed filtering actually runs on.
+    """
+    month_match = re.search(
+        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})",
+        body,
+    )
+    if month_match:
+        try:
+            parsed = datetime.strptime(
+                f"{month_match.group(1)} {month_match.group(2)} {month_match.group(3)}", "%B %d %Y"
+            ).date()
+            return month_match.group(0), parsed.isoformat()
+        except ValueError:
+            pass
+
+    numeric_match = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", body)
+    if numeric_match:
+        try:
+            parsed = datetime.strptime(numeric_match.group(0), "%m/%d/%Y").date()
+            return numeric_match.group(0), parsed.isoformat()
+        except ValueError:
+            pass
+
+    return "see listing", None
 
 
 def parse_job_detail(html_doc, title, url):
@@ -489,40 +535,69 @@ NEW_WINDOW_DAYS = 3
 SOURCE_PRIORITY = {"Playbill": 0, "BroadwayWorld": 1, "Dance/NYC": 2}
 
 
-def normalize_for_matching(title, location):
+def normalize_for_matching(job):
     """
-    Builds a loose matching key so the same audition posted with slightly
-    different wording on different sites (e.g. 'Purple Rain - NYC ECC
-    Dancers (All genders) (08.31.26)' vs 'PURPLE RAIN') is still recognized
-    as the same listing. Playbill and BroadwayWorld both consistently put
-    the show name before a ' - ' separator (or have no separator at all,
-    in which case the whole title usually is the show name), so we split
-    on that first, then strip parentheticals, punctuation, and casing from
-    just that part — rather than guessing a fixed word count, which breaks
-    for single-word show names like 'Hamilton'.
+    Builds a loose matching key so the same audition posted on different
+    sites (e.g. 'Purple Rain - NYC ECC Dancers (08.31.26)' on Playbill vs
+    'PURPLE RAIN' on BroadwayWorld) is recognized as the same listing —
+    while NOT merging genuinely separate postings for the same show, like
+    a site's own separate 'Dancers' call and 'Singers' call, or a
+    Broadway company's call vs. its national Tour call.
+
+    Show name comes from before a ' - ' separator (or the whole title if
+    there's none). Role type (dancer/singer) and tour-vs-not are checked
+    in the title first, falling back to the full listing text if the
+    title alone doesn't say — since some sites put the role type in a
+    separate field rather than the headline.
     """
+    title = job["title"]
+    location = job["location"]
+    body_text = job.get("full_text_for_matching", "").lower()
+    title_lower = title.lower()
+
     show_part = title.split(" - ")[0]
     show_part = re.sub(r"\([^)]*\)", " ", show_part)  # drop parenthetical details
     key_title = re.sub(r"[^a-z0-9 ]", " ", show_part.lower())
     key_title = re.sub(r"\s+", " ", key_title).strip()
+
+    def find_role(text):
+        if "dancer" in text:
+            return "dancer"
+        if "singer" in text:
+            return "singer"
+        return ""
+
+    role = find_role(title_lower) or find_role(body_text)
+    variant = "tour" if "tour" in title_lower or "tour" in body_text else ""
     city = location.split(",")[0].strip().lower() if location else ""
-    return f"{key_title}|{city}"
+    return f"{key_title}|{variant}|{role}|{city}"
 
 
 def deduplicate_jobs(jobs):
-    """Keeps exactly one copy of each audition, picked by SOURCE_PRIORITY."""
-    best_by_key = {}
+    """
+    Collapses listings that appear to be the exact same audition posted on
+    more than one site, keeping the copy from whichever site ranks highest
+    in SOURCE_PRIORITY. Crucially, this only ever merges entries that come
+    from DIFFERENT sources — if a matching-key collision happens between
+    two listings from the same single source, they're left alone and both
+    kept, since a site posting multiple real, distinct listings that
+    happen to share a loose key (rare, but possible) is not the same
+    problem as the same posting being duplicated across sites.
+    """
+    groups = {}
     for job in jobs:
-        key = normalize_for_matching(job["title"], job["location"])
-        existing = best_by_key.get(key)
-        if existing is None:
-            best_by_key[key] = job
+        key = normalize_for_matching(job)
+        groups.setdefault(key, []).append(job)
+
+    result = []
+    for group in groups.values():
+        sources_in_group = set(j["source"] for j in group)
+        if len(sources_in_group) == 1:
+            result.extend(group)  # same source only — trust its own granularity
         else:
-            existing_rank = SOURCE_PRIORITY.get(existing["source"], 9)
-            this_rank = SOURCE_PRIORITY.get(job["source"], 9)
-            if this_rank < existing_rank:
-                best_by_key[key] = job
-    return list(best_by_key.values())
+            best_rank = min(SOURCE_PRIORITY.get(j["source"], 9) for j in group)
+            result.extend(j for j in group if SOURCE_PRIORITY.get(j["source"], 9) == best_rank)
+    return result
 
 
 def load_seen_dates(path=SEEN_LISTINGS_FILE):
@@ -563,6 +638,45 @@ def apply_first_seen_dates(jobs):
     return jobs
 
 
+def within_audition_window(job, criteria):
+    """
+    Decides whether a listing stays on the board.
+
+    If it has a real, parseable audition date: drop it once that date has
+    passed, and drop it if it's further out than max_days_until_audition.
+
+    If it has NO parseable date (audition_date_parsed is None — sites show
+    this as 'see listing' for rolling or invitation-only calls), there's
+    no date to filter by, so instead we use its own first-seen date as a
+    timer: once it's been sitting on the board for more than
+    max_days_for_unknown_date_listings, it gets dropped too, so these
+    don't accumulate forever. This means apply_first_seen_dates() must
+    run BEFORE this filter, since it relies on job['first_seen'].
+    """
+    today = datetime.now().date()
+    parsed = job.get("audition_date_parsed")
+
+    if not parsed:
+        first_seen = job.get("first_seen")
+        max_days_unknown = criteria.get("max_days_for_unknown_date_listings")
+        if first_seen and max_days_unknown is not None:
+            seen_date = datetime.strptime(first_seen, "%Y-%m-%d").date()
+            if (today - seen_date).days > max_days_unknown:
+                return False
+        return True
+
+    audition_date = datetime.strptime(parsed, "%Y-%m-%d").date()
+
+    if criteria.get("hide_past_auditions") and audition_date < today:
+        return False
+
+    max_days = criteria.get("max_days_until_audition")
+    if max_days is not None and (audition_date - today).days > max_days:
+        return False
+
+    return True
+
+
 def scrape_all():
     all_jobs = []
     all_jobs.extend(scrape_playbill())
@@ -570,6 +684,8 @@ def scrape_all():
     all_jobs.extend(scrape_broadwayworld())
 
     all_jobs = deduplicate_jobs(all_jobs)
+    all_jobs = apply_first_seen_dates(all_jobs)  # must run before the window filter below
+    all_jobs = [j for j in all_jobs if within_audition_window(j, YOUR_CRITERIA)]
 
     for job in all_jobs:
         score, tier, reasons = score_job(job, YOUR_CRITERIA)
@@ -577,8 +693,6 @@ def scrape_all():
         job["match_tier"] = tier
         job["match_reasons"] = reasons
         del job["full_text_for_matching"]
-
-    all_jobs = apply_first_seen_dates(all_jobs)
 
     tier_order = {"Strong Match": 0, "Worth a Look": 1, "Long Shot": 2, "Low Priority (Unpaid)": 3, "Low Priority (Cruise Ship)": 4}
     source_order = {"Playbill": 0, "Dance/NYC": 1, "BroadwayWorld": 2}
@@ -967,13 +1081,18 @@ main#board {
 }
 .tier-header {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--curtain);
-  border-bottom: 2px solid var(--curtain);
-  padding-bottom: 0.3rem;
-  margin: 1.2rem 0 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--curtain);
+  padding: 0.65rem 1rem;
+  margin: 1.6rem 0 0.8rem;
+  border-radius: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 .tier-header:first-child { margin-top: 0; }
 .card {
@@ -1104,6 +1223,9 @@ def format_criteria_rows(criteria):
         ("Shows/choreographers always flagged", ", ".join(criteria.get("target_shows_or_choreographers", [])) or "none set"),
         ("Skip unpaid listings", yn(criteria.get("skip_unpaid"))),
         ("Skip cruise ship contracts", yn(criteria.get("skip_cruise_ships"))),
+        ("Hide auditions with a passed date", yn(criteria.get("hide_past_auditions"))),
+        ("Only show auditions within", f"{criteria.get('max_days_until_audition')} days" if criteria.get("max_days_until_audition") is not None else "no limit"),
+        ("Remove undated (\"see listing\") postings after", f"{criteria.get('max_days_for_unknown_date_listings')} days on the board" if criteria.get("max_days_for_unknown_date_listings") is not None else "never"),
     ]
     return "\n    ".join(
         f"<div><dt>{label}</dt><dd>{value}</dd></div>" for label, value in rows
