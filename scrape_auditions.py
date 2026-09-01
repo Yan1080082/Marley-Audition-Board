@@ -24,24 +24,26 @@ from html import unescape
 from datetime import datetime
 
 # ---------------------------------------------------------------------------
-# YOUR CRITERIA — these are guesses, not confirmed with her yet.
+# YOUR CRITERIA — confirmed with Marley directly.
 # Nothing here ever hides a listing — it only affects the RANK/SCORE, so
 # everything still shows up, just sorted with the best fits near the top.
-# Swap any value below once she gives you the real answer.
 # ---------------------------------------------------------------------------
 YOUR_CRITERIA = {
     "height_inches": 63,          # 5'3"
     "hair_color": "dark brown",
-    "target_age": 25,
+    "target_age_min": 16,
+    "target_age_max": 30,
     "gender": "female",
-    "union_status": "open",       # "AEA", "non-union", or "open" (no preference)
+    "union_status": "open",       # non-union currently, but open to either
     "home_base": "Manhattan, New York, NY",
-    "willing_to_travel_for_right_show": True,  # doesn't penalize distance heavily
+    "willing_to_travel_for_right_show": True,  # anywhere in the US for the right one
+    "prefers_housing_provided": True,
     "minimum_pay": None,           # None = doesn't matter right now
-    "dance_styles": ["ballet", "jazz", "tap", "commercial"],
+    "dance_styles": ["musical theater", "jazz", "ballet", "hip hop", "tap", "ballroom", "partnering"],
     "other_skills": ["singing"],
     "target_shows_or_choreographers": [],   # e.g. ["Hamilton", "Ebony Williams"]
     "skip_unpaid": True,
+    "skip_cruise_ships": True,
 }
 
 # How many pages of the Performer category board to pull (~50 listings/page)
@@ -217,13 +219,15 @@ def score_job(job, criteria):
             score -= 30
             reasons.append("gender likely doesn't match")
 
-    # Age
-    target_age = criteria.get("target_age")
-    if target_age and job["age_range"] != "not specified":
+    # Age — she has a target range (e.g. 16-30), not a single number.
+    # We consider it a fit if the listing's stated range overlaps hers at all.
+    age_min = criteria.get("target_age_min")
+    age_max = criteria.get("target_age_max")
+    if age_min is not None and age_max is not None and job["age_range"] != "not specified":
         nums = re.findall(r"\d+", job["age_range"])
         if len(nums) == 2:
             lo, hi = int(nums[0]), int(nums[1])
-            if lo <= target_age <= hi:
+            if lo <= age_max and hi >= age_min:  # ranges overlap
                 score += 15
                 reasons.append("age range fits")
             else:
@@ -245,6 +249,11 @@ def score_job(job, criteria):
     if hair and hair in text:
         score += 5
         reasons.append("hair color mentioned")
+
+    # Housing provided — bonus only, since most listings won't mention it
+    if criteria.get("prefers_housing_provided") and re.search(r"housing (?:is )?(?:provided|included)", text, re.I):
+        score += 8
+        reasons.append("housing provided")
 
     # Location — nudges ranking without penalizing hard, since she'll
     # travel for the right show
@@ -279,10 +288,14 @@ def score_job(job, criteria):
     elif union_pref == "non-union" and job["union"] == "Equity (AEA)":
         score -= 5
 
+    is_cruise_ship = bool(re.search(r"cruise ship|virgin voyages|royal caribbean|carnival cruise|norwegian cruise", text, re.I))
     unpaid_flag = job["is_unpaid"] and criteria.get("skip_unpaid")
+    cruise_flag = is_cruise_ship and criteria.get("skip_cruise_ships")
+    if cruise_flag:
+        reasons.append("cruise ship contract")
 
-    if unpaid_flag:
-        tier = "Low Priority (Unpaid)"
+    if unpaid_flag or cruise_flag:
+        tier = "Low Priority (Unpaid)" if unpaid_flag else "Low Priority (Cruise Ship)"
     elif score >= 35:
         tier = "Strong Match"
     elif score >= 10:
@@ -479,7 +492,7 @@ def scrape_all():
         job["match_reasons"] = reasons
         del job["full_text_for_matching"]
 
-    tier_order = {"Strong Match": 0, "Worth a Look": 1, "Long Shot": 2, "Low Priority (Unpaid)": 3}
+    tier_order = {"Strong Match": 0, "Worth a Look": 1, "Long Shot": 2, "Low Priority (Unpaid)": 3, "Low Priority (Cruise Ship)": 4}
     source_order = {"Playbill": 0, "Dance/NYC": 1, "BroadwayWorld": 2}
     all_jobs.sort(key=lambda j: (source_order.get(j["source"], 9), tier_order.get(j["match_tier"], 9), -j["match_score"]))
     return all_jobs
@@ -599,12 +612,13 @@ function buildTabs() {
   });
 }
 
-const TIER_ORDER = ['Strong Match', 'Worth a Look', 'Long Shot', 'Low Priority (Unpaid)'];
+const TIER_ORDER = ['Strong Match', 'Worth a Look', 'Long Shot', 'Low Priority (Unpaid)', 'Low Priority (Cruise Ship)'];
 const TIER_LABELS = {
   'Strong Match': 'Strong Match',
   'Worth a Look': 'Worth a Look',
   'Long Shot': 'Long Shot',
   'Low Priority (Unpaid)': 'Low Priority — Unpaid',
+  'Low Priority (Cruise Ship)': 'Low Priority — Cruise Ship',
 };
 
 function passesTierFilter(tier, filterValue) {
@@ -944,19 +958,27 @@ def format_criteria_rows(criteria):
     def yn(value):
         return "yes" if value else "no"
 
+    def age_range_label(criteria):
+        lo, hi = criteria.get("target_age_min"), criteria.get("target_age_max")
+        if lo is None or hi is None:
+            return "not set"
+        return f"{lo}–{hi}"
+
     rows = [
         ("Height", height_label(criteria.get("height_inches"))),
         ("Hair color", criteria.get("hair_color") or "not set"),
-        ("Target age", criteria.get("target_age") or "not set"),
+        ("Target age range", age_range_label(criteria)),
         ("Gender", criteria.get("gender") or "not set"),
         ("Union status", {"AEA": "Equity (AEA) only", "non-union": "Non-union only", "open": "Open to either"}.get(criteria.get("union_status"), "Open to either")),
         ("Home base", criteria.get("home_base") or "not set"),
         ("Willing to travel for the right show", yn(criteria.get("willing_to_travel_for_right_show"))),
+        ("Prefers housing provided", yn(criteria.get("prefers_housing_provided"))),
         ("Minimum pay", criteria.get("minimum_pay") or "no minimum set"),
         ("Dance styles", ", ".join(criteria.get("dance_styles", [])) or "none set"),
         ("Other skills valued", ", ".join(criteria.get("other_skills", [])) or "none set"),
         ("Shows/choreographers always flagged", ", ".join(criteria.get("target_shows_or_choreographers", [])) or "none set"),
         ("Skip unpaid listings", yn(criteria.get("skip_unpaid"))),
+        ("Skip cruise ship contracts", yn(criteria.get("skip_cruise_ships"))),
     ]
     return "\n    ".join(
         f"<div><dt>{label}</dt><dd>{value}</dd></div>" for label, value in rows
