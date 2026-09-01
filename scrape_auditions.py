@@ -19,6 +19,7 @@ import json
 import re
 import time
 import urllib.request
+from urllib.parse import urljoin
 from html import unescape
 from datetime import datetime
 
@@ -339,8 +340,18 @@ def scrape_dance_nyc():
         except Exception as e:
             print(f"  couldn't fetch listing page: {e}")
             continue
-        found = re.findall(r'href="(https://www\.dance\.nyc/for-artists/listings/20\d\d/\d\d/[^"?]+/)"', list_html)
-        detail_urls.extend(found)
+        # Links may be absolute (https://www.dance.nyc/...) or relative
+        # (/for-artists/listings/...) depending on how the site renders them,
+        # and may use single or double quotes — so we accept both here and
+        # normalize to a full URL afterward.
+        found = re.findall(
+            r'''href=['"]((?:https://www\.dance\.nyc)?/for-artists/listings/20\d\d/\d\d/[^'"?]+/)['"]''',
+            list_html,
+        )
+        detail_urls.extend(urljoin("https://www.dance.nyc", u) for u in found)
+        if not found:
+            print(f"  0 matches on this page — first 300 chars of what was fetched, for debugging:")
+            print(f"  {strip_tags(list_html)[:300]!r}")
 
     seen = set()
     detail_urls = [u for u in detail_urls if not (u in seen or seen.add(u))]
@@ -401,14 +412,24 @@ def scrape_broadwayworld():
             print(f"  couldn't fetch listing page: {e}")
             continue
 
-        # Find each audition link, then check a window of text right after
-        # it for "Dancer" (that's where the role-type text lives on this
-        # page, e.g. "Equity Ensemble Dancers (All genders)").
-        for m in re.finditer(r'href="(https://www\.broadwayworld\.com/equity-audition/[^"]+)"', list_html):
-            url = m.group(1)
-            window = list_html[m.end():m.end() + 400]
+        # Links may be absolute or relative, and may use single or double
+        # quotes, so we accept both and normalize afterward. Each match
+        # also gets a window of surrounding text checked for "Dancer"
+        # (the role-type text near each link, e.g. "Equity Ensemble
+        # Dancers (All genders)") — checking a bit before AND after the
+        # link since we don't know exactly which side that text sits on.
+        matches = list(re.finditer(
+            r'''href=['"]((?:https://www\.broadwayworld\.com)?/equity-audition/[^'"]+)['"]''',
+            list_html,
+        ))
+        for m in matches:
+            url = urljoin("https://www.broadwayworld.com", m.group(1))
+            window = list_html[max(0, m.start() - 400):m.end() + 400]
             if re.search(r"dancer", window, re.I):
                 candidate_urls.append(url)
+        if not matches:
+            print(f"  0 audition links matched on this page — first 300 chars of what was fetched, for debugging:")
+            print(f"  {strip_tags(list_html)[:300]!r}")
 
     seen = set()
     candidate_urls = [u for u in candidate_urls if not (u in seen or seen.add(u))]
