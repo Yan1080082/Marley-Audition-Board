@@ -69,7 +69,14 @@ def fetch(url):
 
 
 def strip_tags(html_fragment):
-    text = re.sub(r"<[^>]+>", " ", html_fragment)
+    # Remove entire <script> and <style> blocks, including their contents —
+    # otherwise CSS/JS code sitting inside them (font-face declarations,
+    # cookie-setting snippets, etc.) leaks straight into the extracted
+    # text, since removing only the tags themselves leaves their contents
+    # behind as if it were normal page text.
+    text = re.sub(r"<script[^>]*>.*?</script>", " ", html_fragment, flags=re.S | re.I)
+    text = re.sub(r"<style[^>]*>.*?</style>", " ", text, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
     text = unescape(text)
     return re.sub(r"\s+", " ", text).strip()
 
