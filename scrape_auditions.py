@@ -353,7 +353,7 @@ def score_job(job, criteria):
 
 
 def scrape_playbill():
-    all_jobs = []
+    all_dance_links = []
     for page in range(1, PAGES_TO_FETCH + 1):
         print(f"[Playbill] Fetching listings page {page}...")
         try:
@@ -364,17 +364,31 @@ def scrape_playbill():
         links = find_listing_links(list_html)
         dance_links = [(t, u) for t, u in links if is_dance_related(t)]
         print(f"  found {len(links)} listings, {len(dance_links)} look dance-related")
+        all_dance_links.extend(dance_links)
 
-        for title, url in dance_links:
-            print(f"  fetching: {title[:60]}")
-            try:
-                detail_html = fetch(url)
-            except Exception as e:
-                print(f"    skipped ({e})")
-                continue
-            job = parse_job_detail(detail_html, title, url)
-            all_jobs.append(job)
-            time.sleep(0.5)  # be polite to Playbill's servers
+    # Playbill's pagination isn't strictly incremental — later pages can
+    # re-list postings already seen on earlier pages — so we dedupe by URL
+    # across ALL pages before fetching any detail pages. Without this,
+    # the same posting gets fetched and shown more than once.
+    seen_urls = set()
+    unique_dance_links = []
+    for title, url in all_dance_links:
+        if url not in seen_urls:
+            seen_urls.add(url)
+            unique_dance_links.append((title, url))
+    print(f"[Playbill] {len(unique_dance_links)} unique dance-related listings across all pages")
+
+    all_jobs = []
+    for title, url in unique_dance_links:
+        print(f"  fetching: {title[:60]}")
+        try:
+            detail_html = fetch(url)
+        except Exception as e:
+            print(f"    skipped ({e})")
+            continue
+        job = parse_job_detail(detail_html, title, url)
+        all_jobs.append(job)
+        time.sleep(0.5)  # be polite to Playbill's servers
     return all_jobs
 
 
@@ -577,13 +591,28 @@ def deduplicate_jobs(jobs):
     """
     Collapses listings that appear to be the exact same audition posted on
     more than one site, keeping the copy from whichever site ranks highest
-    in SOURCE_PRIORITY. Crucially, this only ever merges entries that come
-    from DIFFERENT sources — if a matching-key collision happens between
-    two listings from the same single source, they're left alone and both
-    kept, since a site posting multiple real, distinct listings that
-    happen to share a loose key (rare, but possible) is not the same
-    problem as the same posting being duplicated across sites.
+    in SOURCE_PRIORITY. Only merges entries from DIFFERENT sources based
+    on the fuzzy title/role match below — if a matching-key collision
+    happens between two listings from the same single source, they're
+    left alone and both kept, since a site posting multiple real,
+    distinct listings that happen to share a loose key (rare, but
+    possible) is not the same problem as the same posting being
+    duplicated across sites.
+
+    Before any of that fuzzy matching, we first collapse anything with
+    the exact same URL, regardless of source — two entries pointing at
+    the identical link are unambiguously the same posting. This handles
+    cases like a source's own pagination overlapping and fetching the
+    same posting more than once.
     """
+    seen_urls = set()
+    url_deduped = []
+    for job in jobs:
+        if job["url"] not in seen_urls:
+            seen_urls.add(job["url"])
+            url_deduped.append(job)
+    jobs = url_deduped
+
     groups = {}
     for job in jobs:
         key = normalize_for_matching(job)
