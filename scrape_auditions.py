@@ -142,7 +142,16 @@ def extract_generic_fields(body, full_desc):
         if 1 <= lo <= 99 and lo <= hi <= 99:
             age_range = f"{lo}s–{hi}s"
 
-    height_match = re.search(r"(\d)\'(\d{1,2})\"?\s*(?:-|to|–)\s*(\d)\'(\d{1,2})\"?", full_desc)
+    # Accept straight quotes ('  "), curly/smart quotes (' ' " "), and
+    # prime marks (′ ″) for feet/inches — sites vary in which they use,
+    # and only matching straight quotes was silently missing real height
+    # ranges written with the curly style.
+    FOOT_MARK = r"(?:'|\u2019|\u2032)"
+    INCH_MARK = r"(?:\"|\u201d|\u2033)"
+    height_match = re.search(
+        rf"(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?\s*(?:-|to|–)\s*(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?",
+        full_desc,
+    )
     height = height_match.group(0) if height_match else "not specified"
     height_range_inches = None
     if height_match:
