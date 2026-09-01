@@ -479,11 +479,97 @@ def scrape_broadwayworld():
     return all_jobs
 
 
+SEEN_LISTINGS_FILE = "seen_listings.json"
+NEW_WINDOW_DAYS = 3
+
+# When the same audition shows up on more than one site, we keep only one
+# copy, in this priority order. Playbill first since it tends to have the
+# richest listing detail; BroadwayWorld next since it's Equity-sourced and
+# usually well-structured; Dance/NYC last only for tie-breaking purposes.
+SOURCE_PRIORITY = {"Playbill": 0, "BroadwayWorld": 1, "Dance/NYC": 2}
+
+
+def normalize_for_matching(title, location):
+    """
+    Builds a loose matching key so the same audition posted with slightly
+    different wording on different sites (e.g. 'Purple Rain - NYC ECC
+    Dancers (All genders) (08.31.26)' vs 'PURPLE RAIN') is still recognized
+    as the same listing. Playbill and BroadwayWorld both consistently put
+    the show name before a ' - ' separator (or have no separator at all,
+    in which case the whole title usually is the show name), so we split
+    on that first, then strip parentheticals, punctuation, and casing from
+    just that part — rather than guessing a fixed word count, which breaks
+    for single-word show names like 'Hamilton'.
+    """
+    show_part = title.split(" - ")[0]
+    show_part = re.sub(r"\([^)]*\)", " ", show_part)  # drop parenthetical details
+    key_title = re.sub(r"[^a-z0-9 ]", " ", show_part.lower())
+    key_title = re.sub(r"\s+", " ", key_title).strip()
+    city = location.split(",")[0].strip().lower() if location else ""
+    return f"{key_title}|{city}"
+
+
+def deduplicate_jobs(jobs):
+    """Keeps exactly one copy of each audition, picked by SOURCE_PRIORITY."""
+    best_by_key = {}
+    for job in jobs:
+        key = normalize_for_matching(job["title"], job["location"])
+        existing = best_by_key.get(key)
+        if existing is None:
+            best_by_key[key] = job
+        else:
+            existing_rank = SOURCE_PRIORITY.get(existing["source"], 9)
+            this_rank = SOURCE_PRIORITY.get(job["source"], 9)
+            if this_rank < existing_rank:
+                best_by_key[key] = job
+    return list(best_by_key.values())
+
+
+def load_seen_dates(path=SEEN_LISTINGS_FILE):
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def save_seen_dates(seen_dates, path=SEEN_LISTINGS_FILE):
+    with open(path, "w") as f:
+        json.dump(seen_dates, f, indent=2)
+
+
+def apply_first_seen_dates(jobs):
+    """
+    Stamps every job with the date it was first ever found on the board,
+    using a small record file that persists between runs. A listing found
+    again on a later run keeps its original date rather than getting a
+    new one — that's what makes "first appeared" stable over time instead
+    of just meaning "today."
+    """
+    seen_dates = load_seen_dates()
+    today = datetime.now().strftime("%Y-%m-%d")
+    today_date = datetime.now().date()
+
+    for job in jobs:
+        first_seen = seen_dates.get(job["url"])
+        if not first_seen:
+            first_seen = today
+            seen_dates[job["url"]] = today
+        job["first_seen"] = first_seen
+        seen_date = datetime.strptime(first_seen, "%Y-%m-%d").date()
+        job["is_new"] = (today_date - seen_date).days < NEW_WINDOW_DAYS
+
+    save_seen_dates(seen_dates)
+    return jobs
+
+
 def scrape_all():
     all_jobs = []
     all_jobs.extend(scrape_playbill())
     all_jobs.extend(scrape_dance_nyc())
     all_jobs.extend(scrape_broadwayworld())
+
+    all_jobs = deduplicate_jobs(all_jobs)
 
     for job in all_jobs:
         score, tier, reasons = score_job(job, YOUR_CRITERIA)
@@ -491,6 +577,8 @@ def scrape_all():
         job["match_tier"] = tier
         job["match_reasons"] = reasons
         del job["full_text_for_matching"]
+
+    all_jobs = apply_first_seen_dates(all_jobs)
 
     tier_order = {"Strong Match": 0, "Worth a Look": 1, "Long Shot": 2, "Low Priority (Unpaid)": 3, "Low Priority (Cruise Ship)": 4}
     source_order = {"Playbill": 0, "Dance/NYC": 1, "BroadwayWorld": 2}
@@ -547,6 +635,7 @@ __CSS__
     <option value="Strong Match">Strong Match only</option>
     <option value="Worth a Look">Strong Match + Worth a Look</option>
   </select>
+  <label class="new-only-toggle"><input type="checkbox" id="newOnlyFilter"> ✦ New only</label>
   <span id="countLabel"></span>
 </div>
 
@@ -562,7 +651,10 @@ __CSS__
   <article class="card">
     <div class="card-top">
       <h2 class="show-title"></h2>
-      <span class="badge union-badge"></span>
+      <div class="badge-row">
+        <span class="badge new-badge" hidden>New within 3 days</span>
+        <span class="badge union-badge"></span>
+      </div>
     </div>
     <p class="location"></p>
     <dl class="facts">
@@ -574,7 +666,10 @@ __CSS__
     </dl>
     <p class="excerpt"></p>
     <div class="match-tags"></div>
-    <a class="view-link" target="_blank" rel="noopener">View full listing →</a>
+    <div class="card-footer">
+      <a class="view-link" target="_blank" rel="noopener">View full listing →</a>
+      <span class="first-seen"></span>
+    </div>
   </article>
 </template>
 
@@ -588,6 +683,7 @@ const searchInput = document.getElementById('search');
 const unionFilter = document.getElementById('unionFilter');
 const genderFilter = document.getElementById('genderFilter');
 const tierFilter = document.getElementById('tierFilter');
+const newOnlyFilter = document.getElementById('newOnlyFilter');
 const countLabel = document.getElementById('countLabel');
 const sourceTabsEl = document.getElementById('sourceTabs');
 
@@ -633,6 +729,7 @@ function render() {
   const union = unionFilter.value;
   const gender = genderFilter.value;
   const tierChoice = tierFilter.value;
+  const newOnly = newOnlyFilter.checked;
 
   const filtered = JOBS.filter(job => {
     if (job.source !== activeSource) return false;
@@ -640,6 +737,7 @@ function render() {
     if (union && job.union !== union) return false;
     if (gender && job.gender_sought !== gender) return false;
     if (!passesTierFilter(job.match_tier, tierChoice)) return false;
+    if (newOnly && !job.is_new) return false;
     return true;
   });
 
@@ -656,6 +754,10 @@ function render() {
     group.forEach(job => {
       const node = cardTemplate.content.cloneNode(true);
       node.querySelector('.show-title').textContent = job.title;
+      const newBadge = node.querySelector('.new-badge');
+      if (job.is_new) {
+        newBadge.hidden = false;
+      }
       const unionBadge = node.querySelector('.union-badge');
       unionBadge.textContent = job.union;
       unionBadge.classList.toggle('equity', job.union === 'Equity (AEA)');
@@ -668,6 +770,7 @@ function render() {
       node.querySelector('.date').textContent = job.audition_date;
       node.querySelector('.excerpt').textContent = job.description_excerpt;
       node.querySelector('.view-link').href = job.url;
+      node.querySelector('.first-seen').textContent = `First appeared on board: ${job.first_seen}`;
       const tagWrap = node.querySelector('.match-tags');
       job.match_reasons.forEach(r => {
         const tag = document.createElement('span');
@@ -682,7 +785,7 @@ function render() {
   countLabel.textContent = filtered.length + (filtered.length === 1 ? ' audition' : ' auditions');
 }
 
-[searchInput, unionFilter, genderFilter, tierFilter].forEach(el => {
+[searchInput, unionFilter, genderFilter, tierFilter, newOnlyFilter].forEach(el => {
   el.addEventListener('input', render);
   el.addEventListener('change', render);
 });
@@ -887,6 +990,7 @@ main#board {
   gap: 0.75rem;
 }
 .show-title { font-size: 1.25rem; margin: 0; }
+.badge-row { display: flex; gap: 0.4rem; flex-shrink: 0; }
 .badge {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.72rem;
@@ -898,6 +1002,15 @@ main#board {
 }
 .badge.equity { background: var(--spotlight); color: #2e1a47; font-weight: 600; }
 .badge.non-union { background: #ddeee0; color: #1f4a30; font-weight: 600; }
+.badge.new-badge { background: var(--curtain-dark); color: #f0e4ff; font-weight: 600; }
+.new-only-toggle {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
 .location {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: var(--ink-soft);
@@ -943,6 +1056,18 @@ dl.facts dd { margin: 0; font-size: 0.9rem; }
   font-weight: 600;
 }
 .view-link:hover { text-decoration: underline; }
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.first-seen {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
 """
 
 
