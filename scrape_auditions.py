@@ -746,6 +746,38 @@ def within_audition_window(job, criteria):
     return True
 
 
+def apply_date_window_filter(all_jobs, criteria):
+    """
+    Applies within_audition_window per source, with a safety net: if
+    filtering would remove EVERY listing from a source that actually had
+    listings, that's a strong sign the date parsing isn't working
+    correctly for that source's page format (rather than every single
+    one of its postings genuinely being past-date or too-far-out at
+    once, which would be an unlikely coincidence). In that case, we keep
+    that source's listings unfiltered instead of silently losing the
+    entire tab, and print a warning so it's visible in the run log.
+    """
+    by_source = {}
+    for job in all_jobs:
+        by_source.setdefault(job["source"], []).append(job)
+
+    result = []
+    for source, jobs_in_source in by_source.items():
+        kept = [j for j in jobs_in_source if within_audition_window(j, criteria)]
+        if jobs_in_source and not kept:
+            print(
+                f"[{source}] WARNING: the audition-date filter would have removed all "
+                f"{len(jobs_in_source)} listings from this source. That almost certainly "
+                f"means date parsing isn't matching this source's page format correctly, "
+                f"rather than every listing genuinely being out of range. Keeping all "
+                f"{len(jobs_in_source)} listings unfiltered for now rather than losing the "
+                f"whole tab."
+            )
+            kept = jobs_in_source
+        result.extend(kept)
+    return result
+
+
 def scrape_all():
     all_jobs = []
     all_jobs.extend(scrape_playbill())
@@ -754,7 +786,7 @@ def scrape_all():
 
     all_jobs = deduplicate_jobs(all_jobs)
     all_jobs = apply_first_seen_dates(all_jobs)  # must run before the window filter below
-    all_jobs = [j for j in all_jobs if within_audition_window(j, YOUR_CRITERIA)]
+    all_jobs = apply_date_window_filter(all_jobs, YOUR_CRITERIA)
 
     for job in all_jobs:
         score, tier, reasons = score_job(job, YOUR_CRITERIA)
