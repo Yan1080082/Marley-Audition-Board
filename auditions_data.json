@@ -1,56 +1,6 @@
 [
   {
     "source": "Playbill",
-    "title": "Performer Paid Just in Time (Tour) - NYC ECC Singers (Morning & Afternoon - Female Characters) (09.15.26) Mack the Tour LLC | New York, NY New York, NY 08/31/2026",
-    "url": "https://playbill.com/job/just-in-time-tour-nyc-ecc-singers-morning-female-afternoon-male-characters-09-15-26/b85454f0-30aa-45be-96d9-e3be67afe329",
-    "location": "Mack the Tour LLC | New York, NY New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Tuesday, September 15, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Tuesday, September 15, 2026 2:00 PM (E) CONTRACT Touring Agreement $995 weekly minimum (Level 6) The minimum base weekly salary for the positions being auditioned for is established by a collective bargaining agreement between The Broadway League Inc., on behalf of the above-named producer, and Actors' Equity Association. It is anticipated that the base weekly salary for each of the below-listed roles will be a minimum of $995 per week (which equals an annualized base salary of $5",
-    "gender_sought": "female",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$995 weekly",
-    "audition_date": "September 15, 2026",
-    "audition_date_parsed": "2026-09-15",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 36,
-    "match_tier": "Strong Match",
-    "match_reasons": [
-      "gender match",
-      "local to home base",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
-    "title": "Performer Paid Just in Time (Tour) - NYC ECC Dancers (Morning & Afternoon - Female Characters) (09.14.26) Mack the Tour LLC | New York, NY New York, NY 08/31/2026",
-    "url": "https://playbill.com/job/just-in-time-tour-nyc-ecc-dancers-morning-afternoon-female-characters-09-14-26/4079e135-2d97-4386-825e-ec78f2ad4df5",
-    "location": "Mack the Tour LLC | New York, NY New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Monday, September 14, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Monday, September 14, 2026 2:00 PM (E) CONTRACT Touring Agreement $995 weekly minimum (Level 6) The minimum base weekly salary for the positions being auditioned for is established by a collective bargaining agreement between The Broadway League Inc., on behalf of the above-named producer, and Actors' Equity Association. It is anticipated that the base weekly salary for each of the below-listed roles will be a minimum of $995 per week (which equals an annualized base salary of $51,",
-    "gender_sought": "female",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$995 weekly",
-    "audition_date": "September 14, 2026",
-    "audition_date_parsed": "2026-09-14",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 36,
-    "match_tier": "Strong Match",
-    "match_reasons": [
-      "gender match",
-      "local to home base",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
     "title": "Performer Paid Aladdin (Broadway) - NYC ECC Dancers (Male & Female characters) (09.10.26) Disney Theatrical Productions New York, NY 08/18/2026",
     "url": "https://playbill.com/job/aladdin-broadway-nyc-ecc-dancers-male-female-characters-09-10-26/5b6160ce-1d41-40c3-bd77-1c2a685f1fea",
     "location": "Disney Theatrical Productions New York, NY",
@@ -123,6 +73,64 @@
       "local to home base",
       "tap listed",
       "singing valued"
+    ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid Just in Time (Tour) - NYC ECC Singers (Morning & Afternoon - Female Characters) (09.15.26) Mack the Tour LLC | New York, NY New York, NY 08/31/2026",
+    "url": "https://playbill.com/job/just-in-time-tour-nyc-ecc-singers-morning-female-afternoon-male-characters-09-15-26/b85454f0-30aa-45be-96d9-e3be67afe329",
+    "location": "Mack the Tour LLC | New York, NY New York, NY",
+    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Tuesday, September 15, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Tuesday, September 15, 2026 2:00 PM (E) CONTRACT Touring Agreement $995 weekly minimum (Level 6) The minimum base weekly salary for the positions being auditioned for is established by a collective bargaining agreement between The Broadway League Inc., on behalf of the above-named producer, and Actors' Equity Association. It is anticipated that the base weekly salary for each of the below-listed roles will be a minimum of $995 per week (which equals an annualized base salary of $5",
+    "gender_sought": "female",
+    "age_range": "not specified",
+    "height_range": "5\u20197 and over",
+    "height_range_inches": [
+      67,
+      null
+    ],
+    "union": "Equity (AEA)",
+    "salary": "$995 weekly",
+    "audition_date": "September 15, 2026",
+    "audition_date_parsed": "2026-09-15",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": true,
+    "match_score": 26,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "gender match",
+      "height likely outside range",
+      "local to home base",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid Just in Time (Tour) - NYC ECC Dancers (Morning & Afternoon - Female Characters) (09.14.26) Mack the Tour LLC | New York, NY New York, NY 08/31/2026",
+    "url": "https://playbill.com/job/just-in-time-tour-nyc-ecc-dancers-morning-afternoon-female-characters-09-14-26/4079e135-2d97-4386-825e-ec78f2ad4df5",
+    "location": "Mack the Tour LLC | New York, NY New York, NY",
+    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Monday, September 14, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Monday, September 14, 2026 2:00 PM (E) CONTRACT Touring Agreement $995 weekly minimum (Level 6) The minimum base weekly salary for the positions being auditioned for is established by a collective bargaining agreement between The Broadway League Inc., on behalf of the above-named producer, and Actors' Equity Association. It is anticipated that the base weekly salary for each of the below-listed roles will be a minimum of $995 per week (which equals an annualized base salary of $51,",
+    "gender_sought": "female",
+    "age_range": "not specified",
+    "height_range": "5\u20197 and over",
+    "height_range_inches": [
+      67,
+      null
+    ],
+    "union": "Equity (AEA)",
+    "salary": "$995 weekly",
+    "audition_date": "September 14, 2026",
+    "audition_date_parsed": "2026-09-14",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": true,
+    "match_score": 26,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "gender match",
+      "height likely outside range",
+      "local to home base",
+      "tap listed"
     ]
   },
   {
@@ -930,54 +938,6 @@
   },
   {
     "source": "BroadwayWorld",
-    "title": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/Just-In-Time--Tour--Mack-the-Tour-LLC-2026-52100",
-    "location": "see listing",
-    "description_excerpt": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW",
-    "gender_sought": "female",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$995 weekly",
-    "audition_date": "September 14, 2026",
-    "audition_date_parsed": "2026-09-14",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 21,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "gender match",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/Just-In-Time--Tour--Mack-the-Tour-LLC-2026-52099",
-    "location": "see listing",
-    "description_excerpt": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW",
-    "gender_sought": "female",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$995 weekly",
-    "audition_date": "September 14, 2026",
-    "audition_date_parsed": "2026-09-14",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 21,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "gender match",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
     "title": "ALADDIN (BROADWAY) \u2014 Ensemble Dancers | New York, NY",
     "url": "https://www.broadwayworld.com/equity-audition/ALADDIN--Broadway--Disney-Theatrical-Productions-2026-51964",
     "location": "see listing",
@@ -1118,6 +1078,62 @@
     "match_tier": "Worth a Look",
     "match_reasons": [
       "jazz listed",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/Just-In-Time--Tour--Mack-the-Tour-LLC-2026-52100",
+    "location": "see listing",
+    "description_excerpt": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW",
+    "gender_sought": "female",
+    "age_range": "not specified",
+    "height_range": "5'7 and over",
+    "height_range_inches": [
+      67,
+      null
+    ],
+    "union": "Equity (AEA)",
+    "salary": "$995 weekly",
+    "audition_date": "September 14, 2026",
+    "audition_date_parsed": "2026-09-14",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": true,
+    "match_score": 11,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "gender match",
+      "height likely outside range",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/Just-In-Time--Tour--Mack-the-Tour-LLC-2026-52099",
+    "location": "see listing",
+    "description_excerpt": "JUST IN TIME (TOUR) \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW",
+    "gender_sought": "female",
+    "age_range": "not specified",
+    "height_range": "5'7 and over",
+    "height_range_inches": [
+      67,
+      null
+    ],
+    "union": "Equity (AEA)",
+    "salary": "$995 weekly",
+    "audition_date": "September 14, 2026",
+    "audition_date_parsed": "2026-09-14",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": true,
+    "match_score": 11,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "gender match",
+      "height likely outside range",
       "tap listed"
     ]
   },
