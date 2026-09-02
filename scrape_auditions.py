@@ -119,21 +119,13 @@ def extract_generic_fields(body, full_desc):
     Pulls gender/age/height/union/salary/date/unpaid signals out of plain
     text. Shared across all sources since the underlying pattern-matching
     doesn't depend on any one site's HTML structure.
-
-    Gender/age/height search the FULL page text (`body`), not just the
-    Description section (`full_desc`) — sites like Playbill put the
-    actual "who they're seeking" details (gender, age, height) in a
-    separate labeled section from the general description, so searching
-    only the description text was missing this info even when it was
-    clearly present elsewhere on the page. `full_desc` is still used
-    for the excerpt text shown on each card, just not for field matching.
     """
     gender = "not specified"
-    if re.search(r"all genders", body, re.I):
+    if re.search(r"all genders", full_desc, re.I):
         gender = "all genders"
-    elif re.search(r"\bfemale\b", body, re.I) and not re.search(r"\bmale\b", body, re.I):
+    elif re.search(r"\bfemale\b", full_desc, re.I) and not re.search(r"\bmale\b", full_desc, re.I):
         gender = "female"
-    elif re.search(r"\bmale\b", body, re.I) and not re.search(r"\bfemale\b", body, re.I):
+    elif re.search(r"\bmale\b", full_desc, re.I) and not re.search(r"\bfemale\b", full_desc, re.I):
         gender = "male"
 
     # Only treat a number range as an age range if the word "age"/"ages"
@@ -143,7 +135,7 @@ def extract_generic_fields(body, full_desc):
     age_range = "not specified"
     age_match = re.search(
         r"ages?\s*(?:range)?\s*[:\-]?\s*(\d{1,2})s?\s*(?:-|to|–)\s*(\d{1,2})s?",
-        body, re.I,
+        full_desc, re.I,
     )
     if age_match:
         lo, hi = int(age_match.group(1)), int(age_match.group(2))
@@ -158,7 +150,7 @@ def extract_generic_fields(body, full_desc):
     INCH_MARK = r"(?:\"|\u201d|\u2033)"
     height_match = re.search(
         rf"(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?\s*(?:-|to|–)\s*(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?",
-        body,
+        full_desc,
     )
     height = height_match.group(0) if height_match else "not specified"
     height_range_inches = None
@@ -238,7 +230,7 @@ def parse_job_detail(html_doc, title, url):
     body = strip_tags(body_match.group(1)) if body_match else strip_tags(text)
 
     labels_in_order = [
-        "SEEKING", "DESCRIPTION", "PREPARATION", "LOCATION", "PERSONNEL", "OTHER DATES",
+        "DESCRIPTION", "PREPARATION", "LOCATION", "PERSONNEL", "OTHER DATES",
         "OTHER", "SALARY", "DURATION", "HOW TO APPLY",
     ]
     sections = {}
