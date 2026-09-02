@@ -151,21 +151,38 @@ def extract_generic_fields(body, full_desc):
             age_range = f"{lo}s–{hi}s"
 
     # Accept straight quotes ('  "), curly/smart quotes (' ' " "), and
-    # prime marks (′ ″) for feet/inches — sites vary in which they use,
-    # and only matching straight quotes was silently missing real height
-    # ranges written with the curly style.
+    # prime marks (′ ″) for feet/inches — sites vary in which they use.
     FOOT_MARK = r"(?:'|\u2019|\u2032)"
     INCH_MARK = r"(?:\"|\u201d|\u2033)"
-    height_match = re.search(
-        rf"(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?\s*(?:-|to|–)\s*(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?",
-        body,
-    )
-    height = height_match.group(0) if height_match else "not specified"
-    height_range_inches = None
-    if height_match:
-        lo = int(height_match.group(1)) * 12 + int(height_match.group(2))
-        hi = int(height_match.group(3)) * 12 + int(height_match.group(4))
+    HEIGHT_VALUE = rf"(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?"
+
+    height = "not specified"
+    height_range_inches = None  # (lo, hi) — either side can be None for open-ended
+
+    # 1. A full range: "5'2-5'8", "5'2\" to 5'8\""
+    range_match = re.search(rf"{HEIGHT_VALUE}\s*(?:-|to|–)\s*{HEIGHT_VALUE}", body)
+    # 2. An open-ended MINIMUM: "5'7 and over", "5'7 or taller", "at least 5'7"
+    min_suffix_match = re.search(rf"{HEIGHT_VALUE}\s*(?:and\s+(?:over|up|above|taller)|or\s+(?:taller|above|more)|\+|minimum)", body, re.I)
+    min_prefix_match = re.search(rf"at\s+least\s+{HEIGHT_VALUE}", body, re.I)
+    # 3. An open-ended MAXIMUM: "5'9 and under", "no taller than 5'9", "max 5'9"
+    max_suffix_match = re.search(rf"{HEIGHT_VALUE}\s*(?:and\s+(?:under|below|shorter)|or\s+(?:shorter|under|below|less)|maximum)", body, re.I)
+    max_prefix_match = re.search(rf"(?:no\s+taller\s+than|under|max(?:imum)?)\s+{HEIGHT_VALUE}", body, re.I)
+
+    if range_match:
+        height = range_match.group(0)
+        lo = int(range_match.group(1)) * 12 + int(range_match.group(2))
+        hi = int(range_match.group(3)) * 12 + int(range_match.group(4))
         height_range_inches = (lo, hi)
+    elif min_suffix_match or min_prefix_match:
+        m = min_suffix_match or min_prefix_match
+        height = m.group(0)
+        lo = int(m.group(1)) * 12 + int(m.group(2))
+        height_range_inches = (lo, None)
+    elif max_suffix_match or max_prefix_match:
+        m = max_suffix_match or max_prefix_match
+        height = m.group(0)
+        hi = int(m.group(1)) * 12 + int(m.group(2))
+        height_range_inches = (None, hi)
 
     is_unpaid = bool(re.search(r"\bunpaid\b|no pay|non-paying|non paying", body, re.I))
 
@@ -319,11 +336,13 @@ def score_job(job, criteria):
             else:
                 score -= 8
 
-    # Height
+    # Height — lo or hi may be None for an open-ended minimum/maximum
+    # (e.g. "5'7 and over" has no upper bound).
     target_height = criteria.get("height_inches")
     if target_height and job["height_range_inches"]:
         lo, hi = job["height_range_inches"]
-        if lo <= target_height <= hi:
+        fits = (lo is None or target_height >= lo) and (hi is None or target_height <= hi)
+        if fits:
             score += 10
             reasons.append("height fits")
         else:
