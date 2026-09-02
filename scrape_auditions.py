@@ -119,13 +119,21 @@ def extract_generic_fields(body, full_desc):
     Pulls gender/age/height/union/salary/date/unpaid signals out of plain
     text. Shared across all sources since the underlying pattern-matching
     doesn't depend on any one site's HTML structure.
+
+    Gender/age/height search the FULL page text (`body`), not just the
+    Description section (`full_desc`) — sites like Playbill put the
+    actual "who they're seeking" details (gender, age, height) in a
+    separate labeled section from the general description, so searching
+    only the description text was missing this info even when it was
+    clearly present elsewhere on the page. `full_desc` is still used
+    for the excerpt text shown on each card, just not for field matching.
     """
     gender = "not specified"
-    if re.search(r"all genders", full_desc, re.I):
+    if re.search(r"all genders", body, re.I):
         gender = "all genders"
-    elif re.search(r"\bfemale\b", full_desc, re.I) and not re.search(r"\bmale\b", full_desc, re.I):
+    elif re.search(r"\bfemale\b", body, re.I) and not re.search(r"\bmale\b", body, re.I):
         gender = "female"
-    elif re.search(r"\bmale\b", full_desc, re.I) and not re.search(r"\bfemale\b", full_desc, re.I):
+    elif re.search(r"\bmale\b", body, re.I) and not re.search(r"\bfemale\b", body, re.I):
         gender = "male"
 
     # Only treat a number range as an age range if the word "age"/"ages"
@@ -135,7 +143,7 @@ def extract_generic_fields(body, full_desc):
     age_range = "not specified"
     age_match = re.search(
         r"ages?\s*(?:range)?\s*[:\-]?\s*(\d{1,2})s?\s*(?:-|to|–)\s*(\d{1,2})s?",
-        full_desc, re.I,
+        body, re.I,
     )
     if age_match:
         lo, hi = int(age_match.group(1)), int(age_match.group(2))
@@ -150,7 +158,7 @@ def extract_generic_fields(body, full_desc):
     INCH_MARK = r"(?:\"|\u201d|\u2033)"
     height_match = re.search(
         rf"(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?\s*(?:-|to|–)\s*(\d){FOOT_MARK}(\d{{1,2}}){INCH_MARK}?",
-        full_desc,
+        body,
     )
     height = height_match.group(0) if height_match else "not specified"
     height_range_inches = None
@@ -193,27 +201,43 @@ def extract_audition_date(body):
     display string and a parsed date (as an ISO string, or None if no
     date was found or it didn't parse) — the parsed version is what the
     upcoming/passed filtering actually runs on.
-    """
-    month_match = re.search(
-        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})",
-        body,
-    )
-    if month_match:
-        try:
-            parsed = datetime.strptime(
-                f"{month_match.group(1)} {month_match.group(2)} {month_match.group(3)}", "%B %d %Y"
-            ).date()
-            return month_match.group(0), parsed.isoformat()
-        except ValueError:
-            pass
 
-    numeric_match = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", body)
-    if numeric_match:
+    Some pages have a "Posted on: [date]" or "Date posted: [date]" field,
+    which is a different date entirely from the actual audition date —
+    it's always in the past, by definition, since that's when the
+    listing went up. Blindly taking the first date-shaped text on the
+    page risked grabbing that instead of the real audition date, which
+    would make hide_past_auditions wrongly treat every single listing on
+    a page as expired. So here we check EVERY date-shaped match in order,
+    and skip any that has "post" in the ~20 characters right before it.
+    """
+    BAD_CONTEXT_WORDS = ("post",)  # covers "posted", "posting", "date posted"
+
+    def has_bad_context(text, start_index):
+        window = text[max(0, start_index - 20):start_index].lower()
+        return any(word in window for word in BAD_CONTEXT_WORDS)
+
+    month_pattern = re.compile(
+        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})"
+    )
+    for m in month_pattern.finditer(body):
+        if has_bad_context(body, m.start()):
+            continue
         try:
-            parsed = datetime.strptime(numeric_match.group(0), "%m/%d/%Y").date()
-            return numeric_match.group(0), parsed.isoformat()
+            parsed = datetime.strptime(f"{m.group(1)} {m.group(2)} {m.group(3)}", "%B %d %Y").date()
+            return m.group(0), parsed.isoformat()
         except ValueError:
-            pass
+            continue
+
+    numeric_pattern = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b")
+    for m in numeric_pattern.finditer(body):
+        if has_bad_context(body, m.start()):
+            continue
+        try:
+            parsed = datetime.strptime(m.group(0), "%m/%d/%Y").date()
+            return m.group(0), parsed.isoformat()
+        except ValueError:
+            continue
 
     return "see listing", None
 
@@ -230,7 +254,7 @@ def parse_job_detail(html_doc, title, url):
     body = strip_tags(body_match.group(1)) if body_match else strip_tags(text)
 
     labels_in_order = [
-        "DESCRIPTION", "PREPARATION", "LOCATION", "PERSONNEL", "OTHER DATES",
+        "SEEKING", "DESCRIPTION", "PREPARATION", "LOCATION", "PERSONNEL", "OTHER DATES",
         "OTHER", "SALARY", "DURATION", "HOW TO APPLY",
     ]
     sections = {}
