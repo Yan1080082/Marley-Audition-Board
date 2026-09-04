@@ -15,7 +15,7 @@
     "audition_date_parsed": "2026-09-10",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 35,
     "match_tier": "Strong Match",
     "match_reasons": [
@@ -27,10 +27,10 @@
   },
   {
     "source": "Playbill",
-    "title": "Performer Paid Chicago (Broadway) - NYC Dancers ECC (Morning & Afternoon - All genders) (09.15.26) Chicago LP | New York, NY New York, NY 09/02/2026",
+    "title": "Performer Paid Chicago (Broadway) - NYC Dancers ECC (Morning & Afternoon - All genders) (09.15.26) (Revised) Chicago LP | New York, NY New York, NY 09/03/2026",
     "url": "https://playbill.com/job/chicago-broadway-nyc-dancers-ecc-morning-afternoon-all-genders-09-15-26/e44f704c-ddbe-406a-8759-38be8f8d1675",
     "location": "Chicago LP | New York, NY New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Tuesday, September 15, 2026 10:00 AM (E) Lunch 2:00 PM - 3:00 PM And Tuesday, September 15, 2026 3:00 PM (E) CONTRACT Production (League) $2799 weekly minimum SEEKING Equity chorus dancers for future replacements in the Broadway production of CHICAGO. [ENSEMBLE] All ages, ethnicities, gender-identities, and all strong, athletic dancers in the Bob Fosse style, with good strong singing voices.",
+    "description_excerpt": "Notice: Audition Call Type: ECC REVISED Casting personnel updated AUDITION DATE Tuesday, September 15, 2026 10:00 AM (E) Lunch 2:00 PM - 3:00 PM And Tuesday, September 15, 2026 3:00 PM (E) CONTRACT Production (League) $2799 weekly minimum SEEKING Equity chorus dancers for future replacements in the Broadway production of CHICAGO. [ENSEMBLE] All ages, ethnicities, gender-identities, and all strong, athletic dancers in the Bob Fosse style, with good strong singing voices.",
     "gender_sought": "not specified",
     "age_range": "not specified",
     "height_range": "not specified",
@@ -66,7 +66,7 @@
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 29,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -91,7 +91,7 @@
     "audition_date_parsed": "2026-09-04",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 29,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -119,7 +119,7 @@
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 26,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -148,7 +148,7 @@
     "audition_date_parsed": "2026-09-14",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 26,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -174,7 +174,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 26,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -186,7 +186,7 @@
   },
   {
     "source": "Playbill",
-    "title": "Performer Paid The Lost Boys (Broadway) - NYC ECC Singers (Morning & Afternoon - All genders) (09.15.26) TLB New York LLC | New York, NY New York, NY 08/28/2026",
+    "title": "Performer Paid The Lost Boys (Broadway) - NYC ECC Singers (Morning & Afternoon - All genders) (09.17.26) TLB New York LLC | New York, NY New York, NY 09/03/2026",
     "url": "https://playbill.com/job/the-lost-boys-broadway-nyc-ecc-singers-morning-afternoon-all-genders-09-15-26/814e1b6f-6435-4cd0-a35a-7354f35e6658",
     "location": "TLB New York LLC | New York, NY New York, NY",
     "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Thursday, September 17, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Thursday, September 17, 2026 2:00 PM (E) CONTRACT Production (League) $2799 weekly minimum SEEKING Equity chorus singers for future replacements in the Broadway production of THE LOST BOYS. ENSEMBLE \u2013 any gender, 20s-40s. Seeking pop/rock singers who are strong movers to populate the world of Santa Carla, California. Must be comfortable singing tight/intricate harmonies. Possible principal understudy assignments.",
@@ -200,7 +200,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 23,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -224,31 +224,7 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 21,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
-    "title": "Performer Paid All My Rowdy Friends - NYC ECC Singers (Morning & Afternoon - All genders) (09.03.26) Rowdy Productions LLC | New York, NY New York, NY 08/20/2026",
-    "url": "https://playbill.com/job/all-my-rowdy-friends-nyc-ecc-singers-morning-afternoon-all-genders-09-03-26/348c4e3e-99b2-4ec4-bb48-38cdd00b3c59",
-    "location": "Rowdy Productions LLC | New York, NY New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Thursday, September 3, 2026 10:00 AM (E) Lunch 1:30 PM - 2:30 PM And Thursday, September 3, 2026 2:30 PM (E) CONTRACT Off Broadway $712 weekly minimum (Tier 2) SEEKING Equity chorus singers for roles in an Off-Broadway Tier 2 work session for ALL MY ROWDY FRIENDS. ENSEMBLE: 4 Male, 3 Female - Comedic actor/singers with great country & pop voices to play various characters we meet in Nashville, including: Huntley's frat guy fianc\u00e9 CONNER KUSMACK (BASS BARITONE) A loveably dim local cop SGT. HARLAN BERRY (BARITONE) His badass deputy, MARKESHA VARGES ",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$712 weekly",
-    "audition_date": "September 3, 2026",
-    "audition_date_parsed": "2026-09-03",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 21,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -272,7 +248,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 21,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -296,7 +272,31 @@
     "audition_date_parsed": "2026-09-14",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
+    "match_score": 21,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid Hamilton (Broadway) - NYC ECC Dancer (Morning & Afternoon - All genders) (09.18.26) Hamilton Uptown LLC | New York, NY New York, NY 08/19/2026",
+    "url": "https://playbill.com/job/hamilton-broadway-nyc-ecc-dancer-morning-afternoon-all-genders-09-18-26/8deb2c8c-58fe-42d9-9818-87655a3dd910",
+    "location": "Hamilton Uptown LLC | New York, NY New York, NY",
+    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Friday, September 18, 2026 10:30 AM (E) Lunch 1:30 PM - 2:30 PM And Friday, September 18, 2026 2:30 PM (E) CONTRACT Production (League) $2799 weekly minimum SEEKING Equity chorus dancers for the Broadway production of HAMILTON. [ENSEMBLE DANCERS/ OFFSTAGE SWINGS] \u2013 Ages 18 to early 30s, any ethnicity, any gender. Actors of color are strongly encouraged to audition. Amazing dancers, versatile in all forms of contemporary dance. Must sing VERY well and be able to portray various characters in the ensemble. Ensemble and swings will also be considered ",
+    "gender_sought": "not specified",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2799 weekly",
+    "audition_date": "September 18, 2026",
+    "audition_date_parsed": "2026-09-18",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
     "match_score": 21,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -320,7 +320,7 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 21,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -344,7 +344,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -367,7 +367,7 @@
     "audition_date_parsed": "2026-09-16",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -390,7 +390,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -413,60 +413,12 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 12,
     "match_tier": "Worth a Look",
     "match_reasons": [
       "musical theater listed",
       "jazz listed"
-    ]
-  },
-  {
-    "source": "Playbill",
-    "title": "Performer Paid The Third Man - Raleigh, NC ECC Singers (Early & Late Afternoon - All genders) (09.09.26) Theatre Raleigh Raleigh, NC 08/18/2026",
-    "url": "https://playbill.com/job/the-third-man-raleigh-nc-ecc-singers-early-late-afternoon-all-genders-09-09-26/3cd58754-7355-4e0b-9f3a-098813ba6a7d",
-    "location": "Theatre Raleigh Raleigh, NC",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Wednesday, September 9, 2026 2:00 PM (E) AND 4:00 PM (E) APPOINTMENTS This call will be run on a 1st come, 1st served basis. Please be present at the beginning of the call to participate. CONTRACT Independent Theatre Contract $911 weekly minimum SEEKING Equity chorus singers for THE THIRD MAN (See breakdown). American Premiere.",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$911 weekly",
-    "audition_date": "September 9, 2026",
-    "audition_date_parsed": "2026-09-09",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 12,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "musical theater listed",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
-    "title": "Performer Paid The Third Man - Raleigh, NC ECC Dancers (Morning & Afternoon - All genders) (09.09.26) Theatre Raleigh Raleigh, NC 08/18/2026",
-    "url": "https://playbill.com/job/the-third-man-raleigh-nc-ecc-dancers-morning-afternoon-all-genders-09-09-26/d44adbda-dde7-41c1-85d0-e5ef8968eb2d",
-    "location": "Theatre Raleigh Raleigh, NC",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Wednesday, September 9, 2026 10:00 AM (E) AND 12:00 PM (E) APPOINTMENTS This call will be run on a 1st come, 1st served basis. Please be present at the beginning of the call to participate. CONTRACT Independent Theatre Contract $911 weekly minimum SEEKING Equity chorus dancers for THE THIRD MAN (See breakdown). American Premiere.",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$911 weekly",
-    "audition_date": "September 9, 2026",
-    "audition_date_parsed": "2026-09-09",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 12,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "jazz listed",
-      "tap listed"
     ]
   },
   {
@@ -485,7 +437,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 8,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -508,7 +460,7 @@
     "audition_date_parsed": "2026-09-11",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -531,7 +483,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -552,7 +504,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -573,7 +525,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -594,7 +546,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Low Priority (Cruise Ship)",
     "match_reasons": [
@@ -617,7 +569,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Low Priority (Cruise Ship)",
     "match_reasons": [
@@ -640,7 +592,7 @@
     "audition_date_parsed": "2026-08-26",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 30,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -664,13 +616,38 @@
     "audition_date_parsed": "2026-08-25",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 27,
     "match_tier": "Worth a Look",
     "match_reasons": [
       "local to home base",
       "jazz listed",
       "hip hop listed"
+    ]
+  },
+  {
+    "source": "Dance/NYC",
+    "title": "MALE & FEMALE DANCERS",
+    "url": "https://www.dance.nyc/for-artists/listings/2026/08/MALE-FEMALE-DANCERS/",
+    "location": ": New York, NY Compensation: Competitive Pay starting at $100/performance plus r",
+    "description_excerpt": "MALE & FEMALE DANCERS | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub Dance Industry Census Roundtab",
+    "gender_sought": "not specified",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Not stated",
+    "salary": "$100",
+    "audition_date": "August 23, 2026",
+    "audition_date_parsed": "2026-08-23",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 27,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base",
+      "ballet listed",
+      "partnering listed"
     ]
   },
   {
@@ -689,7 +666,7 @@
     "audition_date_parsed": "2026-08-27",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 24,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -724,52 +701,6 @@
   },
   {
     "source": "Dance/NYC",
-    "title": "Public Master Workshop by Principal Dancers - Free",
-    "url": "https://www.dance.nyc/for-artists/listings/2026/09/Public-Master-Workshop-by-Principal-Dancers-Free/",
-    "location": ": New York, NY Compensation: N/A",
-    "description_excerpt": "Public Master Workshop by Principal Dancers - Free | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub D",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Not stated",
-    "salary": "not specified",
-    "audition_date": "September 2, 2026",
-    "audition_date_parsed": "2026-09-02",
-    "is_unpaid": false,
-    "first_seen": "2026-09-02",
-    "is_new": true,
-    "match_score": 15,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base"
-    ]
-  },
-  {
-    "source": "Dance/NYC",
-    "title": "Public Master Workshop",
-    "url": "https://www.dance.nyc/for-artists/listings/2026/08/Public-Master-Workshop-/",
-    "location": ": New York, NY Compensation: N/A",
-    "description_excerpt": "Public Master Workshop | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub Dance Industry Census Roundta",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Not stated",
-    "salary": "not specified",
-    "audition_date": "August 29, 2026",
-    "audition_date_parsed": "2026-08-29",
-    "is_unpaid": false,
-    "first_seen": "2026-09-02",
-    "is_new": true,
-    "match_score": 15,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base"
-    ]
-  },
-  {
-    "source": "Dance/NYC",
     "title": "Taylor Trainee Program Audition at Taylor Center for Dance Education (Paul Taylor Dance Company)",
     "url": "https://www.dance.nyc/for-artists/listings/2026/08/Taylor-Trainee-Program-Audition-at-Taylor-Center-for-Dance-Education-Paul-Taylor-Dance-Company/",
     "location": ": New York, NY Compensation: N/A Whitney Browne AUDITION FOR THE 2026-2027 TAYLO",
@@ -784,7 +715,7 @@
     "audition_date_parsed": "2026-08-27",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -807,7 +738,7 @@
     "audition_date_parsed": "2026-08-26",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -830,7 +761,7 @@
     "audition_date_parsed": "2026-08-24",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -877,7 +808,7 @@
     "audition_date_parsed": "2026-09-01",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -900,7 +831,7 @@
     "audition_date_parsed": "2026-08-31",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -923,7 +854,7 @@
     "audition_date_parsed": "2026-08-26",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -944,7 +875,7 @@
     "audition_date_parsed": "2026-08-24",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": -9,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -969,7 +900,7 @@
     "audition_date_parsed": "2026-08-25",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": -18,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -994,12 +925,35 @@
     "audition_date_parsed": "2026-08-24",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": -24,
     "match_tier": "Long Shot",
     "match_reasons": [
       "gender likely doesn't match",
       "partnering listed"
+    ]
+  },
+  {
+    "source": "Dance/NYC",
+    "title": "Alessandra Corona Performing Works Dance Company is looking for professional male dancers!",
+    "url": "https://www.dance.nyc/for-artists/listings/2026/08/Alessandra-Corona-Performing-Works-Dance-Company-is-looking-for-professional-male-dancers/",
+    "location": "see listing",
+    "description_excerpt": "Alessandra Corona Performing Works Dance Company is looking for professional male dancers! | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About A",
+    "gender_sought": "male",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Not stated",
+    "salary": "$17",
+    "audition_date": "August 24, 2026",
+    "audition_date_parsed": "2026-08-24",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": -30,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "gender likely doesn't match"
     ]
   },
   {
@@ -1018,7 +972,7 @@
     "audition_date_parsed": "2026-09-06",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 23,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1042,7 +996,7 @@
     "audition_date_parsed": "2026-09-06",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 23,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1052,56 +1006,8 @@
   },
   {
     "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52087",
-    "location": "New York, NY",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 03, 2026",
-    "audition_date_parsed": "2026-09-03",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 21,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52065",
-    "location": "New York, NY",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 03, 2026",
-    "audition_date_parsed": "2026-09-03",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": true,
-    "match_score": 21,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
     "title": "CHICAGO (BROADWAY) \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO--Broadway--Ambassador-Theatre-2026-52121",
+    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO--Broadway--Chicago-LP-2026-52127",
     "location": "see listing",
     "description_excerpt": "CHICAGO (BROADWAY) \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW ",
     "gender_sought": "all genders",
@@ -1113,32 +1019,7 @@
     "audition_date": "September 15, 2026",
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
-    "first_seen": "2026-09-03",
-    "is_new": true,
-    "match_score": 20,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "jazz listed",
-      "tap listed",
-      "singing valued"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "CHICAGO \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO-Chicago-LP-2026-52120",
-    "location": "see listing",
-    "description_excerpt": "CHICAGO \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE N",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2799 weekly",
-    "audition_date": "September 15, 2026",
-    "audition_date_parsed": "2026-09-15",
-    "is_unpaid": false,
-    "first_seen": "2026-09-03",
+    "first_seen": "2026-09-04",
     "is_new": true,
     "match_score": 20,
     "match_tier": "Worth a Look",
@@ -1164,7 +1045,7 @@
     "audition_date_parsed": "2026-09-10",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 20,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1189,7 +1070,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1212,7 +1093,7 @@
     "audition_date_parsed": "2026-09-17",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1235,7 +1116,7 @@
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 14,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1259,7 +1140,7 @@
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 14,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1283,7 +1164,7 @@
     "audition_date_parsed": "2026-09-10",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 14,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1307,7 +1188,7 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 12,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1331,7 +1212,7 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 12,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1358,7 +1239,7 @@
     "audition_date_parsed": "2026-09-14",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 11,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1386,12 +1267,127 @@
     "audition_date_parsed": "2026-09-14",
     "is_unpaid": false,
     "first_seen": "2026-09-01",
-    "is_new": true,
+    "is_new": false,
     "match_score": 11,
     "match_tier": "Worth a Look",
     "match_reasons": [
       "gender match",
       "height likely outside range",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO-Chicago-LP-2026-52120",
+    "location": "Seattle, WA",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 04, 2026",
+    "audition_date_parsed": "2026-09-04",
+    "is_unpaid": false,
+    "first_seen": "2026-09-03",
+    "is_new": true,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52087",
+    "location": "Seattle, WA",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 04, 2026",
+    "audition_date_parsed": "2026-09-04",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52065",
+    "location": "Seattle, WA",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 04, 2026",
+    "audition_date_parsed": "2026-09-04",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "HAMILTON \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/HAMILTON-Hamilton-Uptown-LLC-2026-52001",
+    "location": "see listing",
+    "description_excerpt": "HAMILTON \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE ",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2,799 weekly",
+    "audition_date": "September 18, 2026",
+    "audition_date_parsed": "2026-09-18",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "HAMILTON \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/HAMILTON-Hamilton-Uptown-LLC-2026-52000",
+    "location": "see listing",
+    "description_excerpt": "HAMILTON \u2014 Ensemble Dancers | New York, NY Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE ",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2,799 weekly",
+    "audition_date": "September 18, 2026",
+    "audition_date_parsed": "2026-09-18",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
       "tap listed"
     ]
   }
