@@ -231,6 +231,30 @@
   },
   {
     "source": "Playbill",
+    "title": "Performer Paid Hamilton (Tour - Angelica) - NYC ECC Dancer (Morning & Afternoon - All genders) (09.21.26) Hamilton Uptown LLC | New York, NY New York, NY 08/19/2026",
+    "url": "https://playbill.com/job/hamilton-tour-angelica-nyc-ecc-dancer-morning-afternoon-all-genders-09-21-26/936fe448-1c91-43d1-8a7b-6f2b2268739e",
+    "location": "Hamilton Uptown LLC | New York, NY New York, NY",
+    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Monday, September 21, 2026 10:30 AM (E) Lunch 1:30 PM - 2:30 PM And Monday, September 21, 2026 2:30 PM (E) CONTRACT Touring Agreement $2599 weekly minimum (Level 1) SEEKING Equity chorus dancers for possible future replacements in the Touring production of HAMILTON. [ENSEMBLE DANCERS/ OFFSTAGE SWINGS] \u2013 Ages 18 to early 30s, any ethnicity, any gender. Actors of color are strongly encouraged to audition. Amazing dancers, versatile in all forms of contemporary dance. Must sing VERY well and be able to portray various characters in the ensemble. Ensem",
+    "gender_sought": "not specified",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2599 weekly",
+    "audition_date": "September 21, 2026",
+    "audition_date_parsed": "2026-09-21",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 21,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "Playbill",
     "title": "Performer Paid Hamilton (Broadway) - NYC ECC Dancer (Morning & Afternoon - All genders) (09.18.26) Hamilton Uptown LLC | New York, NY New York, NY 08/19/2026",
     "url": "https://playbill.com/job/hamilton-broadway-nyc-ecc-dancer-morning-afternoon-all-genders-09-18-26/8deb2c8c-58fe-42d9-9818-87655a3dd910",
     "location": "Hamilton Uptown LLC | New York, NY New York, NY",
@@ -855,54 +879,6 @@
   },
   {
     "source": "BroadwayWorld",
-    "title": "THE PRINCE OF EGYPT \u2014 Ensemble Dancers | Long Beach, CA",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-PRINCE-OF-EGYPT-Musical-Theatre-West-2026-51944",
-    "location": "see listing",
-    "description_excerpt": "THE PRINCE OF EGYPT \u2014 Ensemble Dancers | Long Beach, CA | BroadwayWorld Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSAC",
-    "gender_sought": "all genders",
-    "age_range": "20s\u201339s",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$1054 weekly",
-    "audition_date": "September 6, 2026",
-    "audition_date_parsed": "2026-09-06",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": false,
-    "match_score": 23,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "age range fits",
-      "singing valued"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "THE PRINCE OF EGYPT \u2014 Ensemble Dancers | Long Beach, CA",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-PRINCE-OF-EGYPT-Musical-Theatre-West-2026-51943",
-    "location": "see listing",
-    "description_excerpt": "THE PRINCE OF EGYPT \u2014 Ensemble Dancers | Long Beach, CA | BroadwayWorld Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSAC",
-    "gender_sought": "all genders",
-    "age_range": "20s\u201339s",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$1054 weekly",
-    "audition_date": "September 6, 2026",
-    "audition_date_parsed": "2026-09-06",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": false,
-    "match_score": 23,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "age range fits",
-      "singing valued"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
     "title": "CHICAGO (BROADWAY) \u2014 Ensemble Dancers | New York, NY",
     "url": "https://www.broadwayworld.com/equity-audition/CHICAGO--Broadway--Chicago-LP-2026-52127",
     "location": "see listing",
@@ -917,7 +893,7 @@
     "audition_date_parsed": "2026-09-15",
     "is_unpaid": false,
     "first_seen": "2026-09-04",
-    "is_new": true,
+    "is_new": false,
     "match_score": 20,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1170,6 +1146,52 @@
     "match_reasons": [
       "gender match",
       "height likely outside range",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "HAMILTON (TOUR - ANGELICA) \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/HAMILTON--Tour-Angelica--Angelica-Tour-LLC-2026-52003",
+    "location": "see listing",
+    "description_excerpt": "HAMILTON (TOUR - ANGELICA) \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore M",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2599 weekly",
+    "audition_date": "September 21, 2026",
+    "audition_date_parsed": "2026-09-21",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "HAMILTON (TOUR - ANGELICA) \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/HAMILTON--Tour-Angelica--Angelica-Tour-LLC-2026-52002",
+    "location": "see listing",
+    "description_excerpt": "HAMILTON (TOUR - ANGELICA) \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content Shop Merch 26/27 Season: What's Coming? Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore M",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2599 weekly",
+    "audition_date": "September 21, 2026",
+    "audition_date_parsed": "2026-09-21",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 6,
+    "match_tier": "Long Shot",
+    "match_reasons": [
       "tap listed"
     ]
   },
