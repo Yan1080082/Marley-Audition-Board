@@ -15,7 +15,7 @@
     "audition_date_parsed": "2026-09-24",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 33,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -41,7 +41,7 @@
     "audition_date_parsed": "2026-09-24",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 33,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -386,7 +386,7 @@
     "audition_date_parsed": "2026-09-22",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -409,7 +409,7 @@
     "audition_date_parsed": "2026-09-18",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
     "match_reasons": [
@@ -783,7 +783,7 @@
     "audition_date_parsed": "2026-09-09",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -915,7 +915,7 @@
     "audition_date_parsed": "2026-09-24",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 18,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -940,7 +940,7 @@
     "audition_date_parsed": "2026-09-24",
     "is_unpaid": false,
     "first_seen": "2026-09-10",
-    "is_new": true,
+    "is_new": false,
     "match_score": 18,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -1284,68 +1284,5 @@
     "match_reasons": [
       "tap listed"
     ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO-Chicago-LP-2026-52120",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 12, 2026",
-    "audition_date_parsed": "2026-09-12",
-    "is_unpaid": false,
-    "first_seen": "2026-09-03",
-    "is_new": false,
-    "match_score": 0,
-    "match_tier": "Long Shot",
-    "match_reasons": []
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52087",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 12, 2026",
-    "audition_date_parsed": "2026-09-12",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": false,
-    "match_score": 0,
-    "match_tier": "Long Shot",
-    "match_reasons": []
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52065",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NYC Broadway + NYC Broadway Off-Broadway Off-Off Broadway Cabaret Dance Opera Classical Music United States Eastern CONNECTICUT Connecticut DC Washington, DC DELAWARE Delaware FLORIDA Ft. Myers/Naples FLORIDA Jacksonville FLORIDA Miami Metro FLORIDA Orlando FLORIDA Sarasota FLORIDA Tallahassee FLORIDA Tampa/St. Petersburg GEORGIA Atlanta MAINE Maine MARYLAND Baltimore MASSACHUSETTS Boston NEW HAMPSHIRE",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 12, 2026",
-    "audition_date_parsed": "2026-09-12",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": false,
-    "match_score": 0,
-    "match_tier": "Long Shot",
-    "match_reasons": []
   }
 ]
