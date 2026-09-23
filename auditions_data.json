@@ -346,30 +346,6 @@
   },
   {
     "source": "Playbill",
-    "title": "Performer Paid Wicked (Broadway & Tour) - NYC ECC Singers (Women & Men of Oz) (09.25.26) Various Producers 09/04/2026",
-    "url": "https://playbill.com/job/wicked-broadway-tour-nyc-ecc-singers-women-men-of-oz-09-25-26/b5c30020-3fe2-4e83-ad3e-2c7ccf16451e",
-    "location": "Various Producers",
-    "description_excerpt": "AUDITION DATE Friday, September 25, 2026 WOMEN OF OZ: 10:00 AM (E) MEN OF OZ: 2:00 PM (E) Lunch 1:00 PM - 2:00 PM CONTRACT Production (League) / Touring Agreement $2799 weekly minimum - Broadway $2599 weekly minimum - Tour (Level 1) SEEKING Equity chorus singers (Women & Men of Oz) for possible future replacements in the Broadway and Touring production of WICKED. [SINGERS WHO MOVE]: Any gender, 20s \u2013 50s, any ethnicity. Seeking fantastic singers with a wide vocal range. Should have movement ability. To play various characters in the ensemble and understudy principal roles.",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2799 weekly",
-    "audition_date": "September 25, 2026",
-    "audition_date_parsed": "2026-09-25",
-    "is_unpaid": false,
-    "first_seen": "2026-09-05",
-    "is_new": false,
-    "match_score": 12,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "musical theater listed",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
     "title": "Performer Paid Mean Girls - NYC ECC Dancers (Female & Male Characters) (09.28.26) Pioneer Theatre Company Salt Lake City, UT 09/16/2026",
     "url": "https://playbill.com/job/mean-girls-nyc-ecc-dancers-female-male-characters-09-28-26/0332ebb1-2050-493d-a7df-c7b1f2364974",
     "location": "Pioneer Theatre Company Salt Lake City, UT",
@@ -384,29 +360,6 @@
     "audition_date_parsed": "2026-09-28",
     "is_unpaid": false,
     "first_seen": "2026-09-17",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
-    "title": "Performer Paid The Master Builder / The Lady From the Sea - NYC EPA (09.22.26), (09.23.26), & (09.24.26) New American Ensemble Brooklyn, NY 09/09/2026",
-    "url": "https://playbill.com/job/the-master-builder-the-lady-from-the-sea-nyc-epa-09-22-26-09-23-26-09-24-26/8b6acd5b-edcb-4427-a222-e5f980484d8b",
-    "location": "New American Ensemble Brooklyn, NY",
-    "description_excerpt": "Notice: Audition Call Type: EPA AUDITION DATE Tuesday, September 22, 2026 9:30 AM - 5:30 PM (E) AND Wednesday, September 23, 2026 9:30 AM - 5:30 PM (E) AND Thursday, September 24, 2026 9:30 AM - 5:30 PM (E) Lunch 1:00 PM - 2:00 PM CONTRACT Off Broadway $868 weekly minimum (Cat. A) SEEKING Equity actors for roles in THE MASTER BUILDER / THE LADY FROM THE SEA (See breakdown). Please note that THE MASTER BUILDER and THE LADY FROM THE SEA will be performed in rep, and actors will double in each show as noted in the breakdown. All Equity stage managerial positions have been filled.",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$868 weekly",
-    "audition_date": "September 22, 2026",
-    "audition_date_parsed": "2026-09-22",
-    "is_unpaid": false,
-    "first_seen": "2026-09-10",
     "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
@@ -436,6 +389,27 @@
     "match_reasons": [
       "tap listed"
     ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid Seeking Actor Submissions For Miss Julie @ The Space At Irondale Irondale Ensemble Project Brooklyn, NY US 09/22/2026",
+    "url": "https://playbill.com/job/seeking-actor-submissions-for-miss-julie-the-space-at-irondale/34255cdb-c76c-4779-b7c8-2a213cdcc428",
+    "location": "Irondale Ensemble Project Brooklyn, NY US CONTACT NAME Emilio Cerci",
+    "description_excerpt": "Irondale Ensemble Project\u2019s NEXTGEN Initiative is seeking submissions for NON-UNION Actors for the role of JEAN in an adaptation of MISS JULIE to be presented at The Space at Irondale. Details below: Role: JEAN Play: Miss Julie by August Strindberg Rehearsal Dates: Nov 2-22nd Tech/Dress: Nov 23-26 Shows: Nov 27-Dec 19th (Shows run M-Sat @ 7:30PM, Sat at 3PM) Rate: $500/week (Paid, Non-Union) To Apply Visit: https://forms.gle/fzFZomSmuPVG... Drawing on the philosophy established by Irondale\u2019s founders and longtime ensemble, NextGen gives emerging artists a foundation in Irondale\u2019s collaborative",
+    "gender_sought": "not specified",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Non-Union",
+    "salary": "$500",
+    "audition_date": "see listing",
+    "audition_date_parsed": null,
+    "is_unpaid": false,
+    "first_seen": "2026-09-23",
+    "is_new": true,
+    "match_score": 0,
+    "match_tier": "Long Shot",
+    "match_reasons": []
   },
   {
     "source": "Playbill",
@@ -532,6 +506,29 @@
     "match_reasons": [
       "gender likely doesn't match",
       "hip hop listed"
+    ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid Nashville Holiday Show Dancers POMP, SNOW & CIRQUEumstance Pompano Beach, FL US 09/22/2026",
+    "url": "https://playbill.com/job/nashville-holiday-show-dancers/c850dba8-1e47-46a2-bda0-6881268ddd89",
+    "location": "POMP, SNOW & CIRQUEumstance Pompano Beach, FL US CONTACT NAME Rob Millerick",
+    "description_excerpt": "Casting male dancers for \"Pomp, Snow & Cirqueumstance,\" a high energy theatrical cirque holiday show. The dance ensemble interacts with circus acts, magicians, singer/characters and the audience throughout the show. Be proficient in multiple dance styles. Become a part of the future of this entertainment phenomenon with shows in Orlando, Nashville and Atlantis, Bahamas. Nov 16th - Jan 1st 2027 at Gaylord Opryland Resort Nashville, TN Round Trip Travel, Shared Hotel room on property, 3 meals a day provided Pay $600/Week Male Dancer Role: The dance ensemble interacts with circus acts, magicians,",
+    "gender_sought": "male",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Non-Union",
+    "salary": "$600",
+    "audition_date": "see listing",
+    "audition_date_parsed": null,
+    "is_unpaid": false,
+    "first_seen": "2026-09-23",
+    "is_new": true,
+    "match_score": -30,
+    "match_tier": "Long Shot",
+    "match_reasons": [
+      "gender likely doesn't match"
     ]
   },
   {
@@ -1012,6 +1009,75 @@
   },
   {
     "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO-Chicago-LP-2026-52120",
+    "location": "New York, NY",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 23, 2026",
+    "audition_date_parsed": "2026-09-23",
+    "is_unpaid": false,
+    "first_seen": "2026-09-03",
+    "is_new": false,
+    "match_score": 15,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52087",
+    "location": "New York, NY",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 23, 2026",
+    "audition_date_parsed": "2026-09-23",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 15,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52065",
+    "location": "New York, NY",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$600",
+    "audition_date": "September 23, 2026",
+    "audition_date_parsed": "2026-09-23",
+    "is_unpaid": false,
+    "first_seen": "2026-09-01",
+    "is_new": false,
+    "match_score": 15,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
     "title": "OLD GLOBE 2027 SEASON \u2014 Ensemble Dancers | Los Angeles, CA",
     "url": "https://www.broadwayworld.com/equity-audition/Old-Globe-2027-Season-Old-Globe-2026-52199",
     "location": "see listing",
@@ -1169,75 +1235,6 @@
     "audition_date_parsed": "2026-09-28",
     "is_unpaid": false,
     "first_seen": "2026-09-16",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/CHICAGO-Chicago-LP-2026-52120",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 22, 2026",
-    "audition_date_parsed": "2026-09-22",
-    "is_unpaid": false,
-    "first_seen": "2026-09-03",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52087",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 22, 2026",
-    "audition_date_parsed": "2026-09-22",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/Marriott-Theater-2027-Season-2nd-Half-Marriott-Theatre-2026-52065",
-    "location": "Video Submission",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$600",
-    "audition_date": "September 22, 2026",
-    "audition_date_parsed": "2026-09-22",
-    "is_unpaid": false,
-    "first_seen": "2026-09-01",
     "is_new": false,
     "match_score": 6,
     "match_tier": "Long Shot",
