@@ -1,33 +1,6 @@
 [
   {
     "source": "Playbill",
-    "title": "Performer Paid Hadestown (Broadway) - NYC ECC Singers (Morning & Afternoon - all genders) (10.21.26) Hadestown Broadway LLC | New York, NY New York, NY 10/07/2026",
-    "url": "https://playbill.com/job/hadestown-broadway-nyc-ecc-singers-morning-afternoon-all-genders-10-21-26/2727a3fb-208e-44f6-909c-3a0221894a8f",
-    "location": "Hadestown Broadway LLC | New York, NY New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Wednesday, October 21, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM And Wednesday, October 21, 2026 2:00 PM (E) CONTRACT Production (League) $2799 weekly minimum SEEKING Equity chorus singers for possible future replacements in the Broadway production of HADESTOWN (see breakdown).",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2799 weekly",
-    "audition_date": "October 21, 2026",
-    "audition_date_parsed": "2026-10-21",
-    "is_unpaid": false,
-    "first_seen": "2026-10-08",
-    "is_new": false,
-    "match_score": 41,
-    "match_tier": "Strong Match",
-    "match_reasons": [
-      "local to home base",
-      "musical theater listed",
-      "jazz listed",
-      "tap listed",
-      "singing valued"
-    ]
-  },
-  {
-    "source": "Playbill",
     "title": "Performer Paid Vocalists for 2 Gospel Ensembles Harlem Praise Singers New York, NY US 10/17/2026",
     "url": "https://playbill.com/job/vocalists-for-2-gospel-ensembles/377cea2e-7365-42af-a35d-044f4b59e66d",
     "location": "Harlem Praise Singers New York, NY US",
@@ -424,7 +397,7 @@
     "audition_date_parsed": "2026-10-19",
     "is_unpaid": false,
     "first_seen": "2026-10-19",
-    "is_new": true,
+    "is_new": false,
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
@@ -566,6 +539,29 @@
   },
   {
     "source": "BroadwayWorld",
+    "title": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/City-Center-Encores2027-Season-City-Center-Encores--2026-52505",
+    "location": "see listing",
+    "description_excerpt": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLOR",
+    "gender_sought": "female",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2189 weekly",
+    "audition_date": "November 2, 2026",
+    "audition_date_parsed": "2026-11-02",
+    "is_unpaid": false,
+    "first_seen": "2026-10-20",
+    "is_new": true,
+    "match_score": 15,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "gender match"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
     "title": "Broadway & Regional Theatre Auditions",
     "url": "https://www.broadwayworld.com/equity-audition/AIN-T-TOO-PROUD-Harborside-Productions-LLC-2026-52319",
     "location": "New York, NY",
@@ -576,8 +572,8 @@
     "height_range_inches": null,
     "union": "Equity (AEA)",
     "salary": "$600",
-    "audition_date": "October 21, 2026",
-    "audition_date_parsed": "2026-10-21",
+    "audition_date": "October 22, 2026",
+    "audition_date_parsed": "2026-10-22",
     "is_unpaid": false,
     "first_seen": "2026-09-30",
     "is_new": false,
@@ -599,8 +595,8 @@
     "height_range_inches": null,
     "union": "Equity (AEA)",
     "salary": "$600",
-    "audition_date": "October 21, 2026",
-    "audition_date_parsed": "2026-10-21",
+    "audition_date": "October 22, 2026",
+    "audition_date_parsed": "2026-10-22",
     "is_unpaid": false,
     "first_seen": "2026-09-30",
     "is_new": false,
@@ -664,7 +660,7 @@
     "url": "https://www.broadwayworld.com/equity-audition/PRETTY-WOMAN-Fireside-Theatre-2026-52281",
     "location": "see listing",
     "description_excerpt": "PRETTY WOMAN \u2014 Ensemble Dancers | Chicago, IL | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broad",
-    "gender_sought": "all genders",
+    "gender_sought": "not specified",
     "age_range": "not specified",
     "height_range": "not specified",
     "height_range_inches": null,
@@ -731,7 +727,7 @@
   {
     "source": "BroadwayWorld",
     "title": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/City-Center-Encores2027-Season-City-Center-Encores--2026-52505",
+    "url": "https://www.broadwayworld.com/equity-audition/City-Center-Encores2027-Season-City-Center-Encores--2026-52504",
     "location": "see listing",
     "description_excerpt": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLOR",
     "gender_sought": "not specified",
@@ -748,28 +744,5 @@
     "match_score": 0,
     "match_tier": "Long Shot",
     "match_reasons": []
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/City-Center-Encores2027-Season-City-Center-Encores--2026-52504",
-    "location": "see listing",
-    "description_excerpt": "CITY CENTER ENCORES! 2027\u2026 \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLOR",
-    "gender_sought": "male",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2189 weekly",
-    "audition_date": "November 2, 2026",
-    "audition_date_parsed": "2026-11-02",
-    "is_unpaid": false,
-    "first_seen": "2026-10-20",
-    "is_new": true,
-    "match_score": -30,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "gender likely doesn't match"
-    ]
   }
 ]
