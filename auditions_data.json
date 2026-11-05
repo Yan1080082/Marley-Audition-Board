@@ -40,7 +40,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-11-02",
-    "is_new": true,
+    "is_new": false,
     "match_score": 23,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -70,6 +70,31 @@
     "match_reasons": [
       "local to home base",
       "jazz listed"
+    ]
+  },
+  {
+    "source": "Playbill",
+    "title": "Performer Paid The Phantom Of The Opera (Tour) - NYC ECC Dancers (Male & Female Characters) (11.19.26) Box 5 Company, LLC | Columbia, MD Columbia, MD 10/29/2026",
+    "url": "https://playbill.com/job/the-phantom-of-the-opera-tour-nyc-ecc-dancers-male-female-characters-11-19-26/38372d30-7edc-4c81-910c-acf5b8d99c20",
+    "location": "Box 5 Company, LLC | Columbia, MD Columbia, MD",
+    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE MALE Thursday, November 19, 2026 10:00 AM (E) Lunch 1:00 PM - 2:00 PM AUDITION DATE FEMALE Thursday, November 19, 2026 2:00 PM (E) CONTRACT Touring Agreement $2599 weekly minimum (Level 1) SEEKING Equity chorus dancers (Male & Female Characters) for possible future replacements in the Touring company of THEPHANTOM OF THE OPERA (See breakdown). Box 5 Company, LLC is committed to diverse, inclusive casting. Submissions for non-descript roles will be accepted for all performers, regardless of age, sex, ethnicity, disability, race, color, national orig",
+    "gender_sought": "not specified",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$2599 weekly",
+    "audition_date": "November 19, 2026",
+    "audition_date_parsed": "2026-11-19",
+    "is_unpaid": false,
+    "first_seen": "2026-10-30",
+    "is_new": false,
+    "match_score": 18,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "jazz listed",
+      "ballet listed",
+      "tap listed"
     ]
   },
   {
@@ -167,24 +192,126 @@
   },
   {
     "source": "Dance/NYC",
-    "title": "Apply for MDP | Collective Voices Dance Festival 2027",
-    "url": "https://www.dance.nyc/for-artists/listings/2026/11/Apply-for-MDP-Collective-Voices-Dance-Festival-2027/",
-    "location": ": Brooklyn, NY Compensation: 0 Photo by Steven Pisano Calling choreographers! Ap",
-    "description_excerpt": "Apply for MDP | Collective Voices Dance Festival 2027 | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hu",
+    "title": "Dance and Orchestra Collab",
+    "url": "https://www.dance.nyc/for-artists/listings/2026/11/Dance-and-Orchestra-Collab/",
+    "location": "see listing",
+    "description_excerpt": "Dance and Orchestra Collab | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub Dance Industry Census Rou",
     "gender_sought": "not specified",
     "age_range": "not specified",
     "height_range": "not specified",
     "height_range_inches": null,
     "union": "Not stated",
-    "salary": "not specified",
-    "audition_date": "November 4, 2026",
-    "audition_date_parsed": "2026-11-04",
+    "salary": "$500",
+    "audition_date": "November 5, 2026",
+    "audition_date_parsed": "2026-11-05",
     "is_unpaid": false,
-    "first_seen": "2026-11-04",
+    "first_seen": "2026-11-05",
     "is_new": true,
-    "match_score": 0,
+    "match_score": 6,
     "match_tier": "Long Shot",
-    "match_reasons": []
+    "match_reasons": [
+      "hip hop listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "THE PHANTOM OF THE OPERA\u2026 \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/THE-PHANTOM-OF-THE-OPERA--Tour--Box-5-CompanyLLC-2026-52612",
+    "location": "see listing",
+    "description_excerpt": "THE PHANTOM OF THE OPERA\u2026 \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLORE",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$4",
+    "audition_date": "November 19, 2026",
+    "audition_date_parsed": "2026-11-19",
+    "is_unpaid": false,
+    "first_seen": "2026-10-30",
+    "is_new": false,
+    "match_score": 24,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "musical theater listed",
+      "jazz listed",
+      "ballet listed",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "THE PHANTOM OF THE OPERA\u2026 \u2014 Ensemble Dancers | New York, NY",
+    "url": "https://www.broadwayworld.com/equity-audition/THE-PHANTOM-OF-THE-OPERA--Tour--Box-5-CompanyLLC-2026-52611",
+    "location": "see listing",
+    "description_excerpt": "THE PHANTOM OF THE OPERA\u2026 \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLORE",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$4",
+    "audition_date": "November 19, 2026",
+    "audition_date_parsed": "2026-11-19",
+    "is_unpaid": false,
+    "first_seen": "2026-10-30",
+    "is_new": false,
+    "match_score": 24,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "musical theater listed",
+      "jazz listed",
+      "ballet listed",
+      "tap listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/THE-GRAND-DELUSION-Brooklyn-Academy-of-Music-2026-52501",
+    "location": "New York, NY",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$4",
+    "audition_date": "November 05, 2026",
+    "audition_date_parsed": "2026-11-05",
+    "is_unpaid": false,
+    "first_seen": "2026-10-20",
+    "is_new": false,
+    "match_score": 21,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base",
+      "musical theater listed"
+    ]
+  },
+  {
+    "source": "BroadwayWorld",
+    "title": "Broadway & Regional Theatre Auditions",
+    "url": "https://www.broadwayworld.com/equity-audition/THE-GRAND-DELUSION-Brooklyn-Academy-of-Music-2026-52500",
+    "location": "New York, NY",
+    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
+    "gender_sought": "all genders",
+    "age_range": "not specified",
+    "height_range": "not specified",
+    "height_range_inches": null,
+    "union": "Equity (AEA)",
+    "salary": "$4",
+    "audition_date": "November 05, 2026",
+    "audition_date_parsed": "2026-11-05",
+    "is_unpaid": false,
+    "first_seen": "2026-10-20",
+    "is_new": false,
+    "match_score": 21,
+    "match_tier": "Worth a Look",
+    "match_reasons": [
+      "local to home base",
+      "musical theater listed"
+    ]
   },
   {
     "source": "BroadwayWorld",
@@ -203,56 +330,11 @@
     "is_unpaid": false,
     "first_seen": "2026-10-27",
     "is_new": false,
-    "match_score": 8,
-    "match_tier": "Long Shot",
+    "match_score": 14,
+    "match_tier": "Worth a Look",
     "match_reasons": [
+      "musical theater listed",
       "singing valued"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-GRAND-DELUSION-Brooklyn-Academy-of-Music-2026-52501",
-    "location": "Los Angeles, CA",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$4",
-    "audition_date": "November 04, 2026",
-    "audition_date_parsed": "2026-11-04",
-    "is_unpaid": false,
-    "first_seen": "2026-10-20",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "Broadway & Regional Theatre Auditions",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-GRAND-DELUSION-Brooklyn-Academy-of-Music-2026-52500",
-    "location": "Los Angeles, CA",
-    "description_excerpt": "Broadway & Regional Theatre Auditions | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Add a Show Listing Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGIONS Broadway + NY",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$4",
-    "audition_date": "November 04, 2026",
-    "audition_date_parsed": "2026-11-04",
-    "is_unpaid": false,
-    "first_seen": "2026-10-20",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
     ]
   }
 ]
