@@ -26,31 +26,6 @@
   },
   {
     "source": "Playbill",
-    "title": "Performer Paid The Book of Mormon (Broadway) - NYC ECC Dancers (Male Mormon characters & Male & Female Ugandan characters) (11.13.26) Book of Mormon Broadway LLC New York, NY 11/09/2026",
-    "url": "https://playbill.com/job/the-book-of-mormon-broadway-nyc-ecc-dancers-male-mormon-characters-male-female-ugandan-characters-11-13-26/74d5cde7-7a8b-4358-80bb-875612cb96e7",
-    "location": "Book of Mormon Broadway LLC New York, NY",
-    "description_excerpt": "Notice: Audition Call Type: ECC AUDITION DATE Friday, November 13, 2026 MALE MORMON CHARACTERS: 10:00 AM (E) MALE & FEMALE UGANDAN CHARACTERS: 2:30 PM (E) Lunch 1:30 PM - 2:30 PM CONTRACT Production (League) $2,799 weekly minimum SEEKING Equity chorus dancers (Male Mormon characters, Male & Female Ugandan characters) for possible future replacements for the Broadway production of THE BOOK OF MORMON. MORMON MALES- Characters are male Caucasians, late teens-late 20s, the stereotype of a male-identifying, Utah-based Mormon, always optimistic. Great comedic singers who can tap dance. MALE UGANDAN ",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2,799 weekly",
-    "audition_date": "November 13, 2026",
-    "audition_date_parsed": "2026-11-13",
-    "is_unpaid": false,
-    "first_seen": "2026-11-09",
-    "is_new": false,
-    "match_score": 27,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "local to home base",
-      "jazz listed",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "Playbill",
     "title": "Performer Seeking Actors/Singers/Puppeteers/Clowns/Pole dancers for a closed developmental workshop of a new musical Max's House Productions New York, NY US 11/02/2026",
     "url": "https://playbill.com/job/seeking-actors-singers-puppeteers-clowns-pole-dancers-for-a-closed-developmental-workshop-of-a-new-musical/8766d782-1673-4e7a-978e-9bbe99cf1d94",
     "location": "Max's House Productions New York, NY US",
@@ -186,7 +161,7 @@
     "audition_date_parsed": null,
     "is_unpaid": false,
     "first_seen": "2026-11-11",
-    "is_new": true,
+    "is_new": false,
     "match_score": 15,
     "match_tier": "Worth a Look",
     "match_reasons": [
@@ -238,47 +213,21 @@
     "match_reasons": []
   },
   {
-    "source": "Playbill",
-    "title": "Performer Paid Mainstage Dancers (Male-Presenting) Disney Cruise Line New York, NY US 10/30/2026",
-    "url": "https://playbill.com/job/mainstage-dancers-male-presenting/a888ed63-827a-485a-b519-ac80537455db",
-    "location": "Disney Cruise Line New York, NY US",
-    "description_excerpt": "Disney Cruise Line\u00ae is conducting auditions for future needs across our expanding fleet of ships. Disney takes pride in the art of theatrical storytelling, producing the highest caliber of entertainment at sea. Tell stories only Disney can tell in a unique and exciting way! Seeking dancers trained in musical theatre, ballet, contemporary and commercial to perform in the Walt Disney Theatre repertory company of musicals. Some roles may require tumbling and/or tap. Performed in the beautiful Walt Disney Theatre, Disney Cruise Line proudly presents theatrical productions including Disney Hercules",
-    "gender_sought": "male",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Not stated",
-    "salary": "$1,000.00 \u2013 $1,100.00 per week",
-    "audition_date": "see listing",
-    "audition_date_parsed": null,
-    "is_unpaid": false,
-    "first_seen": "2026-10-30",
-    "is_new": false,
-    "match_score": -3,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "gender likely doesn't match",
-      "local to home base",
-      "ballet listed",
-      "tap listed"
-    ]
-  },
-  {
     "source": "Dance/NYC",
-    "title": "Free Web Design Project",
-    "url": "https://www.dance.nyc/for-artists/listings/2026/11/Free-Web-Design-Project/",
-    "location": ": Brooklyn, NY Compensation: Free Website Design Hi! I'm seeking a few performer",
-    "description_excerpt": "Free Web Design Project | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub Dance Industry Census Roundt",
+    "title": "December performance opportunity",
+    "url": "https://www.dance.nyc/for-artists/listings/2026/11/December-performance-opportunity/",
+    "location": ": NY Compensation: $20/hr Stephanie Sleeper/sleepdance is looking for additional",
+    "description_excerpt": "December performance opportunity | Dance/NYC Skip to page content Log In MENU About Mission JEI Strategic Plan People Team Board Committees Junior Committee Funders Volunteers Contact Job Opportunities Partner Sites Library for the Performing Arts CultureAID The Bessies Our Work Overview Events Videos Photos Symposium Research Advocacy Advocacy Resources NYC Dance Field-Wide Calls Regranting Dance Advancement Fund 2026-2028 Program 2024-2026 Program Past Funds DWR Fund Rehearsal Space Subsidy 2025-2026 Grantees Past Programs DWR About Advisory Group Network DWR Fund DWR Hub Dance Industry Cens",
     "gender_sought": "not specified",
     "age_range": "not specified",
     "height_range": "not specified",
     "height_range_inches": null,
     "union": "Not stated",
-    "salary": "not specified",
-    "audition_date": "November 13, 2026",
-    "audition_date_parsed": "2026-11-13",
+    "salary": "$20",
+    "audition_date": "November 14, 2026",
+    "audition_date_parsed": "2026-11-14",
     "is_unpaid": false,
-    "first_seen": "2026-11-13",
+    "first_seen": "2026-11-14",
     "is_new": true,
     "match_score": 0,
     "match_tier": "Long Shot",
@@ -384,30 +333,6 @@
   },
   {
     "source": "BroadwayWorld",
-    "title": "THE BOOK OF MORMON \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-BOOK-OF-MORMON-Book-of-Mormon-Broadway-LLC-2026-52715",
-    "location": "see listing",
-    "description_excerpt": "THE BOOK OF MORMON \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGION",
-    "gender_sought": "all genders",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2,799 weekly",
-    "audition_date": "November 13, 2026",
-    "audition_date_parsed": "2026-11-13",
-    "is_unpaid": false,
-    "first_seen": "2026-11-07",
-    "is_new": false,
-    "match_score": 12,
-    "match_tier": "Worth a Look",
-    "match_reasons": [
-      "jazz listed",
-      "tap listed"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
     "title": "WEST SIDE STORY \u2014 Ensemble Dancers | Long Beach, CA",
     "url": "https://www.broadwayworld.com/equity-audition/WEST-SIDE-STORY-Musical-Theatre-West-2026-52620",
     "location": "see listing",
@@ -450,29 +375,6 @@
     "match_tier": "Long Shot",
     "match_reasons": [
       "singing valued"
-    ]
-  },
-  {
-    "source": "BroadwayWorld",
-    "title": "THE BOOK OF MORMON \u2014 Ensemble Dancers | New York, NY",
-    "url": "https://www.broadwayworld.com/equity-audition/THE-BOOK-OF-MORMON-Book-of-Mormon-Broadway-LLC-2026-52714",
-    "location": "see listing",
-    "description_excerpt": "THE BOOK OF MORMON \u2014 Ensemble Dancers | New York, NY | BroadwayWorld Skip to main content \u00d7 Get Broadway alerts by text Breaking news to your phone. US mobile only. No password required. Mobile phone (US) required I agree to receive recurring automated SMS news alerts from BroadwayWorld at the number above. Up to 5 msgs/week. Msg & data rates may apply. Consent is not a condition of any purchase. Reply STOP to cancel, HELP for help. Terms | Privacy Sign up 6-digit code Verify Resend link Shop Merch Fall Preview Guide Sign-up My Shows News on your favorite shows, specials & more! EXPLORE REGION",
-    "gender_sought": "not specified",
-    "age_range": "not specified",
-    "height_range": "not specified",
-    "height_range_inches": null,
-    "union": "Equity (AEA)",
-    "salary": "$2,799 weekly",
-    "audition_date": "November 13, 2026",
-    "audition_date_parsed": "2026-11-13",
-    "is_unpaid": false,
-    "first_seen": "2026-11-07",
-    "is_new": false,
-    "match_score": 6,
-    "match_tier": "Long Shot",
-    "match_reasons": [
-      "tap listed"
     ]
   }
 ]
